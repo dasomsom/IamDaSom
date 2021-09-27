@@ -1,0 +1,338 @@
+/**
+===================================================================
+  * 캐러셀
+  * 비주얼 배너
+  * 로그인 박스
+  * 이용방법
+  * 게시판 css
+===================================================================
+*/
+
+
+/*dummy*/
+
+#contents {
+    background-color: #f9f7f9;
+}
+
+
+/**
+------------------------------------------------------------------
+  * superslides plugin
+------------------------------------------------------------------
+*/
+
+#contents>#slide-container {
+    position: relative;
+    width: 100%;
+    height: 420px;
+}
+
+.preserve {
+    position: absolute;
+    right: 50%;
+    margin-right: -960px;
+}
+
+
+/*좌우 화살표 버튼*/
+
+#slides .slides-navigation {
+    height: 100%;
+    top: 0;
+}
+
+#slides .slides-navigation a {
+    display: block;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 210px;
+}
+
+#slides .slides-navigation a:first-child {
+    margin-right: 20px;
+}
+
+#slides .slides-navigation a:last-child {
+    margin-left: 20px;
+}
+
+
+/**슬라이드 페이지 버튼*/
+
+#slide-container>#slides .slides-pagination {
+    position: absolute;
+    top: 380px;
+}
+
+#slide-container>#slides .slides-pagination a {
+    background-color: #c5c3c8;
+    border: none;
+    margin-right: 20px;
+}
+
+#slide-container>#slides .slides-pagination a.current {
+    background-color: #eae8ea;
+    border: none;
+    margin-right: 20px;
+}
+
+#slide-container>#slides>.slides-pagenation a {
+    border: 2px solid rgba(102, 102, 102, 0.3) !important;
+}
+
+
+/*버튼 활성화*/
+
+#slide-container>#slides>.slides-pagenation a.current {
+    background: rgba(102, 102, 102, 0.3) !important;
+}
+
+
+/**
+------------------------------------------------------------------
+  * 비 주 얼 배 너
+  + 이미지를 .hide로 설정하고 jQ에서 .on클래스를 적용하면
+    4개의 이미지들을 한곳으로 모아줄 필요가 없어진다.
+  why? 이미지가 숨겨져있다가 첫번째 요소가 있는 위치로 
+      올라와 나타나기 때문이다. 
+------------------------------------------------------------------
+*/
+
+
+/*배너 합치기*/
+
+#visual {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+
+.hide {
+    display: none;
+}
+
+
+/**a태그 위치 조정*/
+
+.v-btn {
+    position: absolute;
+    top: 173px;
+    left: 12px;
+    text-indent: -100000px;
+    width: 135px;
+    height: 33px;
+}
+
+
+/*v-tab*/
+
+.v-tab {
+    display: block;
+    text-indent: -10000px;
+    position: absolute;
+    bottom: 0;
+}
+
+.v-tab a {
+    float: left;
+    width: 234px;
+    margin-right: 15px;
+    height: 26px;
+    background: url(../img/visual_pointer_160322.png)
+}
+
+.v-tab a.vt4 {
+    margin-right: 0;
+}
+
+
+/*탭 이미지*/
+
+#visual .v-tab a.vt1 {
+    background-position: -500px 0;
+}
+
+#visual .v-tab a.vt2 {
+    background-position: -250px 0;
+}
+
+#visual .v-tab a.vt3 {
+    background-position: 0 0;
+}
+
+#visual .v-tab a.vt4 {
+    background-position: 238px 0;
+}
+
+
+/*활성화 탭 이미지 별도 변경*/
+
+#visual .v-tab li.on a.vt1 {
+    background-position: -500px -30px;
+}
+
+#visual .v-tab li.on a.vt2 {
+    background-position: -250px -30px;
+}
+
+#visual .v-tab li.on a.vt3 {
+    background-position: 0 -30px;
+}
+
+#visual .v-tab li.on a.vt4 {
+    background-position: 238px -30px;
+}
+
+
+/**
+------------------------------------------------------------------
+  * 로 그 인 박 스
+------------------------------------------------------------------
+*/
+
+#right_tab {
+    position: absolute;
+    right: 0;
+    top: 28px;
+}
+
+#r_login {
+    background: url(../img/right_login_bg.gif) no-repeat;
+}
+
+#r_login .txt {
+    background: url(../img/right_login_txt1_three_hours.png) center 17px no-repeat;
+    height: 46px;
+    text-indent: -10000px;
+}
+
+.log_btn {
+    padding: 14px;
+}
+
+
+/**
+------------------------------------------------------------------
+  * 이 용 방 법
+------------------------------------------------------------------
+*/
+
+#rule {
+    height: 200px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+#rule .title li {
+    display: inline-block;
+}
+
+#rule .title li a:first-child, #board .title .sub {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#rule .title li a.sub {
+    color: #999;
+}
+
+#rule .title li span {
+    padding: 0 5px;
+}
+
+
+/*아이콘 이미지 조정 */
+
+#rule_icon {
+    padding-top: 25px;
+}
+
+#rule_icon a {
+    width: 112px;
+    height: 112px;
+    float: left;
+    text-align: center;
+    text-indent: -10000px;
+    margin-right: 38px;
+    background: url(../img/btn_rule_150922.png);
+}
+
+#rule_icon a.icon1 {
+    background-position: 0 0;
+}
+
+#rule_icon a.icon2 {
+    background-position: 0 -120px;
+}
+
+#rule_icon a.icon3 {
+    background-position: 0 -240px;
+}
+
+#rule_icon a.icon4 {
+    background-position: 0 -360px;
+}
+
+#rule_icon a.icon5 {
+    background-position: 0 -480px;
+}
+
+
+/**마우스 hover*/
+
+#rule_icon a.icon1:hover {
+    background-position: -120px 0;
+}
+
+#rule_icon a.icon2:hover {
+    background-position: -120px -120px;
+}
+
+#rule_icon a.icon3:hover {
+    background-position: -120px -240px;
+}
+
+#rule_icon a.icon4:hover {
+    background-position: -120px -360px;
+}
+
+#rule_icon a.icon5:hover {
+    background-position: -120px -480px;
+}
+
+
+/**
+------------------------------------------------------------------
+  * 게 시 판
+------------------------------------------------------------------
+*/
+
+#board {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 234px;
+}
+
+#board .title li a.add {
+    font-weight: 200;
+    padding-left: 45px;
+    font-size: 12px;
+    color: #999;
+}
+
+#board1 {
+    padding-top: 25px;
+}
+
+/*말 줄임 표시*/
+#board1 li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    width: 200px;
+    padding-bottom: 10px;
+}

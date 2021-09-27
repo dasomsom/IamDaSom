@@ -1,0 +1,428 @@
+/**
+===================================================================
+  * 내용
+===================================================================
+*/
+
+/**
+------------------------------------------------------------------
+  * #new_menu
+------------------------------------------------------------------
+*/
+#new_menu{
+	margin-top: 120px;
+	background: url(../img/bev_bg.jpg) center center no-repeat;
+	width: 100%; height: 646px; position: relative; overflow: hidden;
+}
+#new_menu > div {visibility: hidden;}
+.ititle{
+	background: url(../img/17_emblem.png) no-repeat;
+	height: 220px; width: 220px;
+	position: absolute; top: 220px; left: 50%; margin-left: -550px !important; 
+}
+#new_menu button {
+    border: 2px solid #d40f1a; border-radius: 3px;
+    color: #d40f1a;
+    height: 34px; line-height: 12px;
+    padding: 12px 25px 23px;
+    font-size: 18px; position: absolute; bottom: 155px; margin-left: -505px;	left: 50%;
+}
+#new_menu button:hover{
+	background: #d40f1a; color: #fff;
+}
+.isub{
+	background: url(../img/sBubble.png) no-repeat;
+	width: 260px; height: 110px; 
+	position: absolute; left: 50%; top: 270px; margin-left: -297px;
+	z-index: 333;
+}
+.menu-item div:nth-child(odd), .isub,.menu-item a{
+	text-indent: -100000px; display: block; 
+}
+
+/*컵 이미지
+----------------------------------------------------------*/
+.menu1 {
+	background: url(../img/bev1_1_cup.png) no-repeat;
+	height: 260px; width: 300px;
+	position: absolute; top: -40px; left: 50%; margin-left: -495px;
+}
+.menu2{
+	background: url(../img/bev2_cup.png) no-repeat;
+	height: 340px; width: 340px;
+	position: absolute; left: 50%; margin-left: -140px; top: -5px;
+}
+.menu3{
+	background: url(../img/bev1_2_cup.png) no-repeat;
+	height: 260px; width: 300px;
+	position: absolute; left: 50%; margin-left: 345px; top: 237px;
+}
+.menu4{
+	background: url(../img/bev3_cup.png) no-repeat;
+	width: 340px;height: 340px;
+	position: absolute; left: 50%; margin-left: -50px; bottom: -20px;
+}
+.menu5{
+	background: url(../img/bev1_3_cup.png) no-repeat;
+	width: 300px; height: 260px;
+	position: absolute; left: 50%; margin-left: -335px; bottom: -85px;
+}
+/*라벨 이미지
+----------------------------------------------------------*/
+.label1 {
+	background: url(../img/bev1_1_txt.png) no-repeat;
+	height: 135px; width: 190px; position: absolute; left: 50%; margin-left: -355px; top: 95px;
+}	
+.label2 {
+	background: url(../img/bev2_txt.png) no-repeat;
+	height: 140px; width: 220px; position: absolute; left: 50%; margin-left: 60px; top: 65px;
+}
+.label3{
+	background: url(../img/bev1_2_txt.png) no-repeat;
+	width: 190px; height: 135px;
+	position: absolute; left: 50%; margin-left: 207px; top: 230px;
+}
+.label4{
+	background: url(../img/bev3_txt.png) no-repeat;
+	width: 220px;height: 140px;
+	position: absolute; left: 50%; margin-left: 165px; bottom: 20px;
+}
+.label5{
+	background: url(../img/bev1_3_txt.png) no-repeat;
+	width: 190px; height: 135px;
+	position: absolute; left: 50%; margin-left: -220px ; bottom: 115px;
+
+}
+/**
+------------------------------------------------------------------
+  * #notice_area
+------------------------------------------------------------------
+*/
+#notice_area{
+	position:relative; z-index: 3656;
+}
+#notice_area .left{
+	width: 50%; float: left; height: 62px; background: #111;
+}
+#notice_area .left > div{
+	margin-top: 25px; width: 500px; position: absolute; left: 50%; margin-left: -540px; 
+}
+#notice_area .left div > div { font-size:18px; color: #fff; font-weight: 300; margin-top: 0; margin-right: 30px;}
+#notice_area .left ul{ width: 365px; margin-right: 30px;}
+#notice_area .left p a{
+	display: block; 
+	background: url(../img/btn_notice_plus.png) 0 0 no-repeat;
+	width: 36px; height: 36px; text-indent: -10000px;
+	background-size: 35px;
+	position: absolute; bottom: -6px;
+}
+
+#notice_area .right{
+	width: 50%; float: left; background: #f6f5ef; height: 62px;
+}
+#notice_area .right div{
+	width: 340px; margin-top: 25px;
+	position: absolute; left: 50%; margin-left: 185px;
+	font-size:18px; font-weight: 600;
+}
+#notice_area #dw_btn{
+	display: inline-block;
+	background: url(../img/btn_prom_down.png) no-repeat;
+	width: 36px; height: 36px; vertical-align: middle;
+	position: absolute; bottom: -6px; right: 0 ;
+}
+/*스타벅스 프로모션
+----------------------------------------------------------*/
+#up_btn{
+	/*클릭하면 프로모션 창 슬라이드 토글*/
+	display: inline-block;
+	background: url(../img/btn_prom_up.png) no-repeat;
+	width: 36px; height: 36px; vertical-align: middle;
+	position: absolute; bottom: -6px; right: 0 ;
+	display: none;
+}
+
+#promotion {padding-top: 50px; width: 100%; height: 590px; background: #f6f5ef; display: none; }
+#Glide{width: 1200px; margin: auto;}
+
+/*버튼*/
+#Glide  .glide__arrows{ z-index: 335;}
+.glide__arrows > button {
+	height: 40px; width: 40px;
+	border: 2px solid #222; border-radius: 50%; text-indent: -100000px;
+}
+#Glide .prev{
+	background: url(../img/arrow_left_on.png)rgba(213, 213, 213, 0.4) center center no-repeat;	
+	background-size: 40%; 
+}
+#Glide .next{
+	background: url(../img/arrow_right_on.png)rgba(213, 213, 213, 0.4)center center no-repeat; right: 0;
+	background-size: 40%; position: absolute;
+}
+
+#Glide .glide__track >.glide__slide > .box > a{
+	border:2px solid #111; border-radius: 3px; 
+	font-size: 16px; padding: 10px 32px; color: #111; font-weight: 500;  position: absolute; bottom: -15px; margin-left: -585px;
+}
+.glide__track .glide__slide{
+	-webkit-transform:scale(0.9,0.9);
+}
+.glide__track .glide__slide.active{
+	-webkit-transform:scale(1,1);
+}
+/*슬라이드 항목*/
+@media(max-width: 1920px){
+	#Glide .glide__track >.glide__slide img {left: 50%;  padding:0 10px;}
+}
+/**
+------------------------------------------------------------------
+  * #reward
+  +28/72%
+------------------------------------------------------------------
+*/
+.reward_lf{
+	background: #282628;
+	width: 28%; height: 250px; float: left; position: relative;
+}
+.reward_rt{
+	background: url(../img/reward_texbg.jpg)#d6c798 no-repeat;
+	height: 250px; width: 72%; background-size: contain;
+	float: left; position: relative;
+}
+
+#reward .star{
+	background: url(../img/reward_star_bg_m.png) no-repeat; z-index: 333;
+	height: 250px; width: 407px; position: absolute; left: -65px;
+}
+
+#reward .star >img {
+	margin: 110px 0 0 75px; width: 50%;
+}
+#reward .content{position: relative;}
+#reward .content > div:nth-child(2),#reward .content > div:nth-child(3){
+	position: absolute; right: 0; top: 25px; 
+}
+#reward .content > div:nth-child(2) p {
+	margin-top: 20px; background: url(../img/reward_txt.png) no-repeat;
+	width: 740px; height: 73px; text-indent: -100000px; display: inline-block;
+}
+#reward .content > div:nth-child(3) p {
+	margin-top:130px; background: url(../img/egiftCard_txt.png) no-repeat;
+	width: 740px; height: 57px; text-indent: -100000px; display: inline-block;
+}
+.click_btn {
+	/**공통 버튼*/
+	border:2px solid #111; border-radius: 3px; 
+	font-size: 16px; padding: 10px 32px; color: #111; font-weight: 500;
+}
+/*노트북 해상도*/
+@media (min-width:1199px) and (max-width:1280px){
+	/*노트북 해상도*/
+	.reward_lf{ width: 18%; }
+	.reward_rt{ width: 82%; }
+}
+/*버튼 디자인 + hover 이벤트
+----------------------------------------------------------*/
+#reward #log{
+	position: absolute; bottom: 0; right: 30px; z-index: 336;
+}
+#reward #join{
+	position: absolute; bottom: 0; right: 145px; z-index: 336;
+	background: #111; color: #fff;
+}
+#reward #gift{
+	position: absolute; top: 130px; right: 30px; padding: 10px 50px;
+}
+#reward #log:hover, #reward #gift:hover,#store .click_btn:hover,#product .click_btn:hover, #drive .click_btn:hover, #promotion li>a:hover {
+	background: #111; color: #fff;
+}
+#reward #join:hover{
+	background-color: #d6c798 ; color: #111;
+}
+/**
+------------------------------------------------------------------
+  * #product
+  +배경 -40px
+------------------------------------------------------------------
+*/
+#product{
+	background: url(../img/winter_coffee_bg.jpg) -40px no-repeat;
+	height: 572px; position: relative; overflow: hidden;
+}
+@media(max-width: 1280px){
+	#product{
+	background: url(../img/winter_coffee_bg.jpg) -340px no-repeat;}
+}
+.prod_img {
+	background: url(../img/winter_bean.png) right no-repeat;
+	width: 493px; height: 499px; margin-top: 40px;
+	
+}
+#product> div:first-child{
+	width: 47%; 
+}
+#product> div:last-child{
+	width: 53%; text-indent: -10000px; margin-top: 170px;
+}
+#product> div:last-child>div{
+	width: 488px; margin-left: 110px;
+}
+#product .title {
+	background: url(../img/winter_bean_ttl.png) no-repeat;
+	height: 57px; margin-bottom: 10px;
+}
+#product .txt{
+	background: url(../img/winter_bean_txt.png) no-repeat;
+	height: 95px; margin-bottom: 30px;
+}
+#product a {
+	margin-left: 115px;
+}
+
+/**
+------------------------------------------------------------------
+  * #reserve
+------------------------------------------------------------------
+*/
+#reserve{
+	background: url(../img/black_reserve_bg2.jpg) no-repeat;
+	height: 400px; position: relative;
+}
+#reserve> div{ 
+	width: 1100px; position: absolute; left: 50%; margin-left: -525px; top: 105px;
+}
+.reserve_logo{
+	width: 152px; height: 186px;
+	background: url(../img/reserve_coffee_logo.png) no-repeat;	
+}
+.reserve_txt{
+	background: url(../img/black_reserve_txt2.png) no-repeat;
+	width: 450px; height: 165px; 
+	margin-left: 70px; padding-bottom: 35px; position: relative; top: -20px;
+}
+#reserve .click_btn {
+	color: #d9aa8a;
+	border-color: #d9aa8a;
+	position: absolute;
+	bottom: 0px;
+}
+#reserve .click_btn:hover{
+	color: #fff;
+	background: #d9aa8a;
+}
+.reserve_img{
+	background: url(../img/res_bean_1712.png) center no-repeat;
+	width: 255px; height: 420px; position: absolute; right: 30px;bottom: -105px;
+}
+/**
+------------------------------------------------------------------
+  * #ect_menu
+------------------------------------------------------------------
+*/
+#ect_menu{
+	background: url(../img/fav_prod_bg_new.jpg)center center no-repeat;
+	background-attachment: fixed;
+	height: 800px;  overflow: hidden;
+	background-size: cover; position: relative;
+}
+#ect_menu .left{width: 50%; float: left;}
+#ect_menu .left > div{
+	position: absolute; left: 50%; top: 20%;
+}
+#ect_menu .left .title{
+	background: url(../img/fav_prod_txt01.png) no-repeat;
+	height: 204px; width: 258px; margin-left: -445px; 
+}
+#ect_menu .left .txt{
+	background: url(../img/fav_prod_txt02.png) no-repeat;
+	height: 156px; width: 362px; margin-top: 250px; margin-left: -550px; 
+}
+#ect_menu .left .click_btn{
+	float: right; margin: 200px 2px 0 0;
+	color: #fff;
+	border-color: #fff;
+}
+#ect_menu .right{
+	float: left;
+	background: url(../img/fav_prod_img.png) no-repeat;
+	width: 100%; height: 478px; position: absolute; left: 50%; margin-left: -90px; top: 17%;
+}
+#ect_menu .click_btn:hover{
+	color: #222;
+	background: #fff;
+}
+/**
+------------------------------------------------------------------
+  * #store
+------------------------------------------------------------------
+*/
+#store {
+	/**배경**/
+	background: url(../img/reserve_bg.jpg)center center no-repeat;
+	background-attachment: fixed; background-size: cover;
+	height: 590px;  width: 100%; /*position: relative;*/display: table;
+}
+.store_box_cell{
+	display: table-cell; vertical-align: middle;
+}
+
+#store_box{
+	/*플립박스*/
+	width: 340px; height: 340px; margin: auto;
+}
+
+#store_box .b-front{
+	background: url(../img/reserve_medal01.png) center center no-repeat;
+	width: 250px;height: 250px;
+}
+#store_box .b-back{
+	background: url(../img/reserve_medal02.png) center center no-repeat;
+	width: 334px; height: 334px; position: relative;
+	
+}
+#store .click_btn {
+	position: absolute; left: 50%; margin-left: -61px; 
+	bottom: 70px;
+}
+
+/**
+------------------------------------------------------------------
+  * #drive
+------------------------------------------------------------------
+*/
+#drive{
+	background: url(../img/store_bg.jpg);
+	height: 400px; position: relative; overflow: hidden;
+}
+.bg1{
+	background: url(../img/store_exp_img03.png) no-repeat;
+	height: 142px; position: absolute; top:-60px; width: 343px; left: 425px;
+}
+.bg2{
+	background: url(../img/store_exp_img04.png) no-repeat;
+	height: 102px; width: 230px;
+	position: absolute; right: 30px; top: 298px;
+
+}
+#drive .big{
+	background: url(../img/store_exp_img02.png) no-repeat;
+	height: 312px;width: 366px; margin-left: 65px;
+}
+#drive .small{
+	background: url(../img/store_exp_img01.png) no-repeat;
+	width: 228px;height: 228px; position: absolute; top: 150px;left: 300px;
+}
+#drive> div> div:last-child{
+	position: absolute; right: 65px; top: 100px;
+}
+#drive .title {
+	background: url(../img/store_txt01.png) no-repeat;
+	width: 385px; height: 54px; margin-bottom: 20px;
+}
+#drive .txt{
+	background: url(../img/store_txt02.png) no-repeat;
+	width: 366px; height: 61px;
+}
+#drive .click_btn{
+	position: absolute; bottom: -70px;
+}

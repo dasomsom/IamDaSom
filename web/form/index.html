@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/code.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+
+<body>
+    <form class="form-horizontal" name="counsel_form" id="counsel_form">
+        <h1 id="title">건축문의상담</h1>
+        <div class="form-group  pbottom20 font300">
+            <span>원하시는 상담유형(필수)</span>
+            <input type="checkbox" class="chs_btn" name="user_mail" value="user_mail" />
+            <label>이메일</label>
+            <input type="checkbox" class="chs_btn" name="user_phone" value="user_phone" />
+            <label>휴대전화</label>
+
+            <input type="checkbox" class="chs_btn" name="user_kakao" id="user_kakao" value="user_kakao" />            
+            <label for="kakao_id">카카오톡/ID</label>
+            <input type="text" name="kakao_id" id="kakao_id" class="kakao" disabled/>
+
+        </div>
+        <hr/>
+        <div class="form-group ptop30">
+            <label for="user_name" class="col-md-2">이름</label>
+            <div class="col-md-10">
+                <input type="text" name="user_name" id="user_name" class="form-control" /><span class="point">필수사항입니다.</span>
+            </div>
+        </div>
+        <div class="form-group ptop20">
+            <label for="tel" class="col-md-2">연락처</label>
+            <div class="col-md-10">
+                <input type="tel" name="tel" id="tel" class="form-control" /><span class="point">필수사항입니다.</span>
+            </div>
+        </div>
+        <div class="form-group ptop20">
+            <label for="email" class="col-md-2">이메일</label>
+            <div class="col-md-10">
+                <input type="email" name="email" id="email" class="form-control w200"/><span class="point">필수사항입니다.</span>
+            </div>
+        </div>
+        <div class="form-group ptop20">
+        	<label for="postcode" class="col-md-2">주소</label>
+        	<div class="col-md-10">
+        		<input type="text" name="postcode" id="postcode" class="form-control" /><a href="#" class="ads_btn">우편번호 검색</a><span class="point">필수사항입니다.</span>
+        		<div class="rest">
+        			<input type="text" class="form-control w200" name="addr1-1"/>
+        			<input type="text" class="form-control w200" name="addr2-1"/>
+        		</div>
+        	</div>
+        </div>
+        <div class="form-group ptop20">
+        	<label for="postcode2" class="col-md-2">건축예정지 주소</label>
+        	<div class="col-md-10">
+        		<input type="text" name="postcode2" id="postcode2" class="form-control" /><a href="#" class="ads_btn">우편번호 검색</a><span class="point">필수사항입니다.</span>
+        		<div class="rest">
+        			<input type="text" class="form-control w200" name="addr2-1"/>
+        			<input type="text" class="form-control w200" name="addr2-2"/>
+        		</div>
+        	</div>
+        </div>
+
+        <div class="form-group ptop20">
+            <label for="style" class="col-md-2">건축 스타일</label>
+            <div class="col-md-10 ptop5">
+				<input type="checkbox" name="style"/><label class="b_btn">모던</label>
+				<input type="checkbox" name="style"/><label class="b_btn">지중해</label>
+				<input type="checkbox" name="style"/><label class="b_btn">북미식</label>
+				<input type="checkbox" name="style"/><label class="b_btn">기타</label>
+            </div>
+        </div>
+        <div class="form-group ptop20">
+            <label for="method" class="col-md-2">건축공법</label>
+            <div class="col-md-10 ptop5">
+				<input type="checkbox" name="method"/><label class="b_btn">목조</label>
+				<input type="checkbox" name="method"/><label class="b_btn">콘크리트</label>
+				<input type="checkbox" name="method"/><label class="b_btn">ALC</label>
+				<input type="checkbox" name="method"/><label class="b_btn">기타</label>
+            </div>
+        </div>
+        <div class="form-group ptop20">
+            <label for="size" class="col-md-2">건축규모</label>
+            <div class="col-md-10 ptop5">
+            	<span>지하<input type="text" class="form-box"/>층</span>
+				<span class="plr20">지상<input type="text" class="form-box"/>층</span>
+				<input type="checkbox"  name="method"/><label class="b_btn">다락층</label>
+            </div>
+        </div>
+        <div class="form-group ptop20">
+            <label for="date" class="col-md-2">예정일</label>
+            <div class="col-md-10">
+                <select name="obj" class="drop-control">
+					<option value="obj1" checked/ >희망예정일선택</option>
+					<option value="obj2">착공희망일선택</option>
+					<option value="obj3">입주희망일선택</option>
+				</select>
+				<select name="year" class="drop-control mleft15">
+					<option value="year">2017</option>
+				</select>
+				<span>년</span>
+				<select name="month" class="drop-control mleft15">
+					<option value="month">01</option>
+				</select>
+				<span>월</span>
+				<select name="date" class="drop-control mleft15">
+					<option value="date">01</option>
+				</select>
+				<span>일</span>
+            </div>
+        </div>
+        <div class="form-group ptop20">
+            <label for="cash" class="col-md-2">건축예산</label>
+            <div class="col-md-10">
+                <input type="text" name="cash" id="cash" class="form-control w200" /><span> 담장, 조경등은 제외 됩니다.</span>
+            </div>
+        </div>
+        <div class="form-group ptop20">
+            <label for="qna_title" class="col-md-2">문의제목</label>
+            <div class="col-md-10">
+                <input type="text" name="qna_title" id="qna_title" class="qna-title  w100 " />
+            </div>
+        </div>
+        <div class="form-group ptop20">
+            <label for="qna" class="col-md-2 qna-subtitle">문의내용</label>
+            <div class="col-md-10">
+                <textarea name="memo" class="qna-control"></textarea>
+            </div>
+        </div>
+        <div class="form-group ptop20 ">
+            <label for="photo" class="col-md-2">사진</label>
+            <div class="col-md-10">
+                <input type="file" name="photo" id="photo" class="file-control" value="선택된 파일 없음" /><span> 원하시는 스타일의 주택사진을 올려주세요.</span>
+            </div>
+        </div>
+
+        <hr class="line"/>
+
+        <div class="text-center">
+        	<button type="submit" class="btn1">건축문의상담</button>
+        </div>        
+    </form>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/regex.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>

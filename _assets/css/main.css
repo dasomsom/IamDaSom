@@ -1,0 +1,675 @@
+
+/**
+------------------------------------------------------------------
+  * 메인
+------------------------------------------------------------------
+*/
+
+
+/*  공통 CSS
+  + star dust background  
+  + title 영역 조정
+---------------------------------------------------------------*/
+.dust {
+	width: 100%; height: 100%;
+	background: url(../img/stardust.png) repeat;
+	background-size: contain;
+	
+}
+@media (min-width: 768px){
+	.dust {
+		background-size:  calc(30% + 50px);
+	}
+}
+.container .title { 
+	margin:auto;
+	padding: 120px 0 0 ;
+}
+.h2bold {
+	font-family: 'Quicksand', sans-serif !important;
+	font-weight: 600 !important;
+	font-size: 38px; 
+}
+
+/**
+  * #intro
+------------------------------------------------------------------
+*/
+#home {
+	width: 100%; height: 100%;
+	overflow: hidden; 
+	background-size: contain;
+	background: #000 url(../img/mobile-bg.jpg);
+	background-attachment: fixed;
+	position: relative;
+}
+#home > video { display: none; }
+#home .dust {
+	position: absolute; top: 0; z-index: 410; overflow: hidden; 
+}
+/*neon sign css*/
+#home .title {
+	position: absolute; z-index: 411; top: 0;
+	width: 100%; height: 100%; display: table; 
+}
+#home .title div {
+	display: table-cell; vertical-align: middle;
+} 
+h1.ml8 {
+  font-weight: 900;
+  font-size: 4.5em;
+  color: #91baff;
+  width: 3em;
+  
+}
+.ml8 .circle {
+  position: absolute;
+  z-index: 420;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+.ml8 .circle-dark-dashed {
+	width: 4em;
+    height: 4em;
+    letter-spacing: 50px; 
+    border-radius: 4.7em; 
+    background-color: transparent;
+    border: 2px inset-10-10 #91baff;
+    box-shadow: 0 3px 5px, 0 0 2px, 0 0 0em #bc0bdc, 
+    							  0 0 0.5em #bc0bdc, 
+    							  0 0 0.1em #bc0bdc, 
+    							0 10px .5em #91baff;
+}
+.title b{
+	font-family:'Poiret One', cursive;
+	-webkit-font-family:'Poiret One', cursive !important;
+	font-size:8vh;
+	color: #fee;
+	text-shadow: 		0 -10px 100px, 
+							  0 0 2px,
+				  0 0 1em #bc0bdc, 
+				0 0 0.5em #bc0bdc, 
+				0 0 0.1em #bc0bdc, 
+				  0 10px 3px #000;
+}
+.title b span{
+	animation: blink linear infinite 2s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+/* //neon sign css */
+#home > div:last-child {
+	position: absolute;
+    bottom: 20%;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+    text-align: center;
+}
+.typing {
+   font-family: 'Quicksand', sans-serif;
+   font-size: 1.2em;
+   color: #8fb7ef;
+}
+/* #about
+------------------------------------------------------------------
+*/
+/* my photo*/
+  /*#skill > .box > div:last-child {
+	width: 100%; height: 350px;
+	background: url(../img/me.png) top right no-repeat;
+	background-size: 70%;
+	opacity: 0.3
+  }*/
+#about {
+	width: 100%;
+	background: 
+        linear-gradient(
+            to bottom, 
+         rgba(0, 0, 0,.9), 
+         rgb(95, 75, 139),
+         rgba(22,51,99,.9)
+    );
+}
+#about .dust {
+	padding-bottom: 90px;
+}
+.title-center {
+	padding: 130px 0 10px;
+}
+#about .container .box { 
+	line-height: 1.7; font-size: 14px;
+	font-weight: 200 !important;
+}
+.ab-box {
+	position: relative; width: 100%; 
+}
+#numbox li {
+	font-size: .9em;
+	color: #eee;
+}
+.content .bold { 
+	line-height: 2;
+	font-weight: 450; 
+	color:#90b7ef;
+	font-size: 1.2em;
+}
+.content p:first-child {
+	padding: 10px; word-wrap: break-word;
+}
+.content p:first-child span {
+	color: #ffc83e;
+	font-size: 1em;
+	line-height: 1.5;
+}
+#about .container > .box > .content ul {
+	margin: 40px 0; 
+	padding: 20px;
+	background-color: rgba(17, 11, 35, 0.3);
+}
+#about .container > .box > .content ul > li {
+	text-align: center; 
+	padding-bottom: 10px;
+}
+#skill { overflow: hidden; }
+#skill ul > li {
+	font-weight: 140;
+	text-indent: 20px;
+}
+.educational {
+	margin: 30px 0;
+}
+#skill {
+	/*여백 조정*/
+	line-height: 1.5;
+}
+#skill >.title {
+	padding-top: 50px;
+}
+#skill > .box {
+	width: 100%;
+	margin: auto;
+	-webkit-user-select: none; position: relative;
+}	
+#skill > .box > div:first-child {
+	width: 100%;
+}
+/* my photo*/
+#skill > .box > div:last-child {
+	width: 80%;
+    height: 82%;
+    position: absolute;
+    top: 25px;
+    right: -55px;
+    background: url(../img/me.png) top center no-repeat;
+    background-size: 60%;
+    opacity: 0.2;
+}	
+#skill > .box > div:first-child > ul {
+	border-left: 1px solid #fff;
+}
+#skill > .box > div:first-child > div > ul {
+	border-right: 1px solid #fff;
+	padding-right: 20px;
+}
+.pro-skill {
+	text-align: right;
+}
+.pro-skill > ul > li{
+	font-weight: 140;
+}
+@media (min-width: 768px) {
+	#home > video { 
+		opacity: 0.8; display: block;
+	}
+	#buble_title {
+		width: 100%; position: absolute; top: 0;
+	}
+	#about .container > .box > .content ul > li {
+		width: 49%; 
+		float: left;
+		padding: 16px;
+	}
+  	#skill > .box > div:first-child > ul > li:nth-child(2n) {
+  		float: left;
+  	}
+  	#skill {
+  		padding-top: 50px;
+  	}
+  	.content > div:first-child {
+		width: 600px;
+		margin: auto;
+  	}
+}
+@media (min-width: 992px) {
+	/*neon sign css*/
+	.ml8 .circle-dark-dashed {
+	    border-radius: 5em; 
+	    width: 5em;
+	    height: 5em;
+	}
+	.title b{
+		font-size:10vh;
+	}
+	#home > div:last-child {
+	    bottom: 13%;
+	}
+	#skill .title,
+	#ico-bg .container > div {
+		width: 730px;
+		margin: auto;
+	}
+	#skill > .box {
+	  	width: 730px;
+	}
+	.ab-box {
+		width: 90%;
+	}
+	#skill > .box > div:first-child {
+		width: 75%;
+	}
+	/* my photo*/
+	#skill > .box > div:last-child {
+		width: 30%; height: 350px;
+		background: url(../img/me.png) top right no-repeat;
+		background-size: 70%;
+	} 
+	#about .container > .box > .content {
+		display: table-cell;
+		padding-top: 0;
+		vertical-align: middle;
+	}
+	#about .container .box {
+		font-size: 16px;
+	}
+}
+@media (min-width: 1200px){
+  	.typing {
+	   font-weight: 100 !important;
+	}
+	#skill > .box,
+	#skill .title,
+	#ico-bg .container > div {
+  		width: 900px;
+  	}
+  	/* my photo*/
+  	#skill > .box > div:last-child {
+		width: 30% !important;
+		height: 95% !important;
+		top: 0 !important;
+		right: -25px !important;
+	}
+	.content > div:first-child {
+		width: 800px;
+  	}
+}
+
+/** 포트폴리오 영역
+  * #work_port
+------------------------------------------------------------------
+*/
+#work_port {
+	width: 100%; position: relative; 
+	background: 
+        linear-gradient(
+            to bottom, 
+            rgb(22,51,99),
+            rgb(0,0,0)
+    );
+}
+/*높이 조정*/
+.work-port-ht { height: 100%; } 
+#work_port .dust {
+	background-attachment: fixed;
+	background-color: rgba(17, 11, 35, 0.3);
+    border-top: 1px solid #0c224a;
+}
+/**planet list*/
+.planet-ico {
+	margin: 10px auto 0;
+}
+.planet-ico li a {
+    display: block;
+    font-size: 13px;
+    margin: auto;
+    line-height: 3;
+    /*opacity: 0.4;*/
+}
+.planet-ico {
+	position: relative;
+	z-index: 44;
+}
+.planet-ico li {
+	display: block;
+}		
+.planet-ico li a img {
+	width: 90%;
+}
+.planet-ico li a p {
+	padding: 10px 0;
+    line-height: 1.5;
+}
+.planet-ico-bg {
+	width: 100%; background: rgba(22,51,99,0.7);
+	position: absolute; top: 0; padding: 340px 0 25px;
+	font-size: 14px; z-index: 43;
+}
+.bg-closed {
+	margin-top: 30px;
+}
+.bg-closed a {
+	display: inline-block;
+	width: 20px; height: 20px;
+}
+.planet-ico-scale {
+		-webkit-transition: all 0.5s linear;
+	          	transition: all 0.5s linear;
+	-webkit-transform: scale3d(1.1, 1.1, 1);
+      		transform: scale3d(1.1, 1.1, 1);
+}
+.planet-ico li a:hover,
+ .planet-ico li a:focus {
+	opacity: 1;
+	outline: 0;
+}
+
+/* portfoli list 영역*
+  + x scroll
+---------------------------------------------------------------*/
+#list > #gall_web > ul {/*.no-scroll*/
+	padding: 10px;
+    background: #07193a;
+    position: relative;
+    overflow-y: hidden;
+    white-space: nowrap;/* 가로스크롤시 중요한 속성 */
+    overflow-x: auto;
+    max-height: 240px;
+}
+#list > #gall_web > ul li {
+	margin-bottom: 15px;
+}
+#list > ul:last-child {
+	font-size: 13px;
+	opacity: .5;
+	background: #07193a;
+    padding: 10px;
+}
+#list > #gall_web > ul:last-child li {
+	color: #afc9ca;
+}
+.move-ico {
+	width: 100%; height: 100%; 
+	padding: 60px 0;
+	position: absolute; top: 0; left: 0; z-index: 44444;
+	background: rgba(21, 21, 40, 0.85);
+}
+.move-ico img {
+	width: 60px;
+	height: 50px;
+	display: block;
+	margin: 0 auto 5px;
+}
+#list > div .items {
+    display: inline-block;
+    margin-left: 20px;
+    width: 45%;
+    background: rgba(213, 213, 213, 0.3);
+    padding: 5px;
+}
+#list > div .items:first-child {
+	margin-left: 7px;
+}
+#list > div .items p {
+	white-space: nowrap;   
+    overflow: hidden;        
+    text-overflow: ellipsis;
+    font-size: .9em;
+}
+.nav-work {
+	position: relative; 
+}
+#list {
+	height: 100%; 
+	padding-top: 35px;
+	overflow: hidden;
+	margin-top: 50px;
+}
+/*#list ul > li {display: inline-block; width: 30%;}*/
+/*.port-box {
+	width: 90%;
+	margin: auto;
+	overflow: hidden; 
+}*/
+.port-list {
+	padding: 10px 10px 0;
+    max-height: 240px;
+    background: #07193a;
+}
+.port-list figure {
+	max-height: 150px;
+    overflow: hidden;
+}
+.port-list figure img {
+    		transform: translate(0,-100px);
+    -webkit-transform: translate(0,-100px);
+}
+.port-list ul li {
+	float: left; 
+	width: 50%;
+	text-align: left; 
+}
+.port-list ul .port-title {
+	text-indent: 10px; line-height: 2.7;
+	border-bottom: none;
+}
+.port-list ul .sub {
+	line-height: 3;
+	float: right;
+	text-align: right;
+	padding-right: 10px;
+	font-size: .9em;
+}
+.port-box a,
+.port-box img {
+	width: 100%;
+	display: inline-block;
+}
+/*lucky*/
+#gall_travel .port-list figure img {
+    		transform: translate(0,-70px);
+    -webkit-transform: translate(0,-70px);
+}
+.port-title {
+    text-align: center;
+    line-height: 1.7;
+}
+.items .sub {
+	padding: 0;
+}
+#list > div > .sub {
+	margin-bottom: 30px;
+	/*width: 85%; margin: auto;	*/
+	word-wrap: break-word; /*박스 끝에서 줄바꿈*/
+
+}
+/*  animation CSS 
+  + visual
+  + 노트북, 데스크탑
+---------------------------------------------------------------*/
+.por-info {
+	display: none;
+}
+.nav-work .container .h2bold {
+	padding-top: 130px; text-align: center;
+	padding-bottom: 30px;
+}
+@media (min-width: 668px){
+	/* my photo*/
+	#skill > .box > div:last-child {
+		width: 50%;
+	    height: 90%;
+	    top: -25px;
+	    right: -45px;
+	}
+	.planet-ico-bg {
+		padding-top: 430px;
+	}
+	/*portfolio x slider */
+	#list > div > ul {
+	    max-height: 190px;
+	}
+	#list > div .items {
+	    width: 35%;
+	}
+	.port-list figure {
+		max-height: 210px;
+	}
+	/*portfolio visu,lucky*/
+	.port-list figure {
+		float: left;
+		width: 50%;
+		margin-right: 30px;
+	}
+	.port-list figure img {
+	    		transform: translate(0,-90px);
+	    -webkit-transform: translate(0,-90px);
+	}
+	.port-list ul {
+		width: 45%;
+		float: left;
+		padding-top: 7%;
+	}
+	.port-list ul li {
+		width: 100%;
+		text-align: left; 
+	}
+	.port-list ul .port-title {
+	    line-height: 2;
+    	font-size: 1.3em;
+    	border-bottom: 1px solid;
+    	text-indent: 0;
+	}
+	.port-list ul .sub {
+		text-align: left;
+	}
+	/*lucky*/
+	#gall_travel .port-list figure img {
+	    		transform: translate(0,-50px);
+	    -webkit-transform: translate(0,-50px);
+	}
+}
+@media (min-width: 768px) {
+	.visual { 
+	  	position: absolute; 
+    }
+	.nav-work {
+		width: 100%;
+		height: 100%; 
+		position: relative; 
+	}
+	#list {
+		height: 100%;
+		padding: 35px 0;
+	}
+	/**planet list*/
+	.planet-ico {
+		margin: 40px auto 70px;
+	}
+	.planet-ico li a img {
+		width: 70%;
+	}
+	.planet-ico li a, 
+	.planet-ico-bg {
+	    font-size: 16px;
+	}
+	/*portgolio x slider */
+	#list > div > ul {
+	    max-height: 190px;
+	}
+	#list > div .items {
+	    width: 25%;
+	}
+	/*portfolio visu,lucky*/
+	.port-list figure img {
+	    		transform: translate(0,-110px);
+	    -webkit-transform: translate(0,-110px);
+	}
+	.port-list ul {
+		padding-top: 5%;
+	}/*lucky*/
+	#gall_travel .port-list figure img {
+	    		transform: translate(0,-40px);
+	    -webkit-transform: translate(0,-40px);
+	}
+}
+@media (min-width: 1200px) {
+	/**planet list*/
+	.planet-ico li a {
+	    font-size: 18px;
+	}
+	.planet-ico li a img {
+		width: 60%;
+	}
+	.planet-ico-bg {
+		padding-top: 500px;
+	}
+	.bg-closed {
+		margin-top: 0;
+	}
+	/*portgolio x slider */
+	#list > div > ul {
+	    max-height: 235px;
+	}
+	.move-ico {
+		display: none;
+	}
+}
+
+/**
+  * #gallery
+------------------------------------------------------------------
+*/
+.sub {
+	color: #d5d5d5;
+	line-height: 1.4;
+}
+@media (min-width: 1200px) {
+  
+  .sub{
+  	padding-top: 0;
+  }
+}

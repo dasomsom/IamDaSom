@@ -1,0 +1,221 @@
+/**
+===================================================================
+  * 공통 css
+  * 상/하단 css 
+  * 사이드 > 프리퀀시 css
+===================================================================
+*/
+/**
+------------------------------------------------------------------
+  * 공 통
+  + .container 넓이는 1100px
+------------------------------------------------------------------
+*/
+*{ font-family: "나눔고딕","맑은고딕","굴림","Helvetica"; color:#666; }
+a { text-decoration: none; }
+button{background: none; border: none;}
+.pull-left {float: left;}
+.pull-right {float: right;}
+.clearfix:after{content: ''; clear: both; float: none; display: block;}
+.block {display: block;}
+.container {width: 1100px; margin: auto; position: relative;}
+.line:after { content:'|'; color: #d5d5d5; padding:0 12px 0 15px;}
+.point_g{ color: #669900; font-size: 12px; font-weight: 600; }
+.hide{display: none;} .on{display: block;}
+.t-none{text-indent: -10000px;}
+
+.pt10{padding-top: 10px;}
+.pt30 {padding-top: 30px;}
+.pb20{padding-bottom: 20px;}
+.pb50{padding-bottom: 50px;}
+.mt5{margin-top: 5px;}
+.mt10{margin-top: 10px;}
+.mb65 {margin-bottom:65px;}
+
+/**
+------------------------------------------------------------------
+  * 상 단
+------------------------------------------------------------------
+*/
+header {
+	background: #f6f5ef;
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #e5e5e5;
+	height: 120px; width: 100%;
+	position: fixed; top: 0; z-index: 99999999;
+}
+.b-logo { position: absolute; top: 25px; z-index: 2; }
+.b-logo > a {
+	display: block; 
+	width: 75px; height: 75px; 
+	background: url(../img/logo.png) center center no-repeat;
+}
+
+/* 메 뉴
+----------------------------------------------------------*/
+.nav > ul > li {
+	display: inline-block;
+	margin: 18px 0 14px;
+	font-size: 13px; line-height: 20px; 	
+}
+.nav > ul > li:last-child { margin-right: 15px; }
+
+/*검색 아이콘
+----------------------------------------------------------*/
+.search {
+	border: 1px solid #e5e5e5; border-radius: 5px;
+	width: 34px; height: 34px;
+	display: block;
+	margin-top: 8px; margin-right: 25px;
+	background: #fff;
+}
+
+.search >img{ margin: 7px 0 0 7px; }
+.search_btn > .search:nth-child(2){ display: none; }
+
+.menu_search{
+	/**input 태그**/
+	border: none; background: none;
+	padding: 7px 0 7px 5px;
+	font-size: 13px;
+	position: absolute;  right: 65px; margin-top: 12px;
+	display: none;
+}
+/*아이콘 클릭했을때 이미지 변화*/
+.slide_search{
+	/*js css효과*/ 
+	padding-left: 160px;	
+}
+
+/*슬라이드 메뉴
+----------------------------------------------------------*/
+.menu {
+	margin: auto; width: 1100px;
+	font-size: 14px;
+}
+.menu> ul>li>h3 { margin-top: 18px; }
+.menu> ul>li>h3>a { padding: 15px 25px 37px 25px; }
+.menu>ul>li>h3>a:hover{
+	color: #669900; background: #2C2A29;
+	text-decoration: underline;
+}
+.hover{
+	color: #669900; background: #2C2A29;
+	text-decoration: underline;
+}
+
+/*2차메뉴
+----------------------------------------------------------*/
+.inner_menu{
+	float: left;
+	width: 220px; 
+	padding: 20px 0 30px 0;
+}
+#title, footer li:first-child a , #notice_area .left a{
+	/*상단 메뉴 +하단 메뉴 */
+	font-weight: 400;
+	color: #fff;
+	font-size: 15px;
+}
+
+.inner_menu a, .sub_bg .item a, .menu_font, .copyright{
+	/*text조절*/
+	color: #999; font-size: 12px; font-weight: 500;
+}
+.inner_menu li:nth-child(2){ padding-top: 10px; }
+a:hover { text-decoration: underline !important;}
+
+/*store 메뉴 조정*/
+.menu>ul>li:nth-child(3) ul{ height: 90px; }
+
+/*what's new 메뉴 조정*/
+.menu>ul>li:last-child ul{ height: 120px; }
+.menu>ul>li:last-child ul:last-child{ height: 25px; }
+
+/*메뉴영역 확장*/
+.menu-container{
+	width: 100%;
+	position: absolute; left: 0; top: 120px; z-index: 9999;
+	line-height: 20px;	
+	/*숨기기*/
+	display: none;
+}
+.list_bg { background:#2C2A29;}
+.item_wide{
+	/*상단 메뉴 +하단 메뉴 영역*/
+	width: 1100px; margin: auto;	
+}
+.sub_bg{
+	background: url(../img/gnb_sub_txbg.jpg) repeat-x;
+	border-bottom: 	5px solid #2C2A29;
+}
+.sub_bg >.list_wide { width: 1100px; margin: auto;}
+.sub_right_img, .sub_right_txt { float: left; margin-right: 15px; }
+.badge {vertical-align: middle;}
+
+/**
+------------------------------------------------------------------
+  * 하 단
+------------------------------------------------------------------
+*/
+footer { background: #2c2929; position: relative; }
+footer ul li{display: inline-block;}
+footer div:first-child ul li {display: block;}
+footer div:first-child ul {
+	margin-right: 60px;
+	margin-top: 40px;
+	margin-bottom: 130px;
+}
+footer div:nth-child(2){
+	position: absolute; top: 220px; 
+	width: 100%; background: #282828;
+	overflow: hidden;
+}
+footer div:first-child{
+	background: url(../img/footer_logo.png) right 40px no-repeat;
+}
+.award { width: 1220px; margin: auto; }
+.award li{ margin:10px 5px; }
+
+footer a {
+	/*큰 제목은 상단메뉴와 동일*/
+	font-weight: 400;
+	color: #fff;
+	font-size: 13px; line-height: 23px;
+}
+.point_fg{
+	color: #00b050 !important;
+	font-size: 13px !important;
+}
+.center {text-align: center;}
+.button a{
+	border: 2px solid #fff;
+	border-radius: 3px;
+	padding: 7px 25px; 
+}
+.button { margin: 15px 0 20px 0;}
+.button a:first-child{ font-size: 13px !important;}
+.button li:nth-child(2){ margin: 0 5px;}
+.address li{
+	font-size: 13px;
+	color: #999 !important; 
+	font-weight: 500; line-height: 40px;
+}
+/**
+------------------------------------------------------------------
+  * 프리퀀시 스티커
+------------------------------------------------------------------
+*/
+#sticker{
+	background: url(../img/layer_eFq.png) no-repeat;
+	background-size: 80%;
+	position: fixed; z-index: 99999; top: 160px; left: 50%; margin-left: 360px;
+}
+#sticker a:first-child {
+	display: block; width: 222px; height: 212px; text-indent: -10000px;
+}
+#sticker a:last-child{
+	background: url(../img/btn_layer_close_s.gif)center center no-repeat #555;;
+	border: 3px solid #555; border-radius: 50%;
+	width: 16px; height: 16px; position: absolute; top: 20px; right: 35px;  z-index: 99999;
+}

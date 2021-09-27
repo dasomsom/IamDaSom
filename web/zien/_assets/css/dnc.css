@@ -1,0 +1,24 @@
+/**
+===================================================================
+  * dnc css
+===================================================================
+*/
+
+/**
+------------------------------------------------------------------
+  + .container 넓이는 100%
+------------------------------------------------------------------
+*/
+#dnc > div:first-child {
+	width: 100%; height: 100%;
+	position: absolute; top: 0; background: rgba(0, 0, 0, 0.3);
+}
+#dnc .img { 
+	width: 100%; height: 100%;
+	background: url(../img/dining.jpg) center center no-repeat; 
+	background-size: cover;
+}
+#dnc > h2 {
+	position: absolute; left: 50%; margin-left: -250px; top: 50%; color: #fff;
+	text-shadow: 2px 2px 5px #666; z-index: 4444;
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Socar clone site</title>
+	<!--플러그인 css참조-->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/contents.css">
+	<link rel="stylesheet" href="superslides/stylesheets/superslides.css">
+	
+</head>
+<body>
+	<!--상단-->
+	<div id="header">
+		<div class="container clearfix">
+			<div class="pull-left">
+				<a href="#"><img src="img/header_logo.png" class="br_logo " alt="쏘카로고"></a>
+			</div>
+			<!--메뉴-->
+			<ul class="menu">
+				<li><a href="#">서비스안내</a></li>
+				<li><a href="#">요금안내</a></li>
+				<li><a href="#">법인/단체안내</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#" class="point">마이페이지</a></li>
+				<li><a href="#" class="point">쏘카 찾기・예약</a></li>
+			</ul>
+			<div id="right_menu" class="clearfix">
+				<a href="#"><img src="img/header_car_sharing_n.gif" class="pull-left" alt="공유서울나눔카"/></a>
+				<div id="gnb" class="pull-left">
+					<button><a href="#" id="log_m">로그인</a><span>|</span><a href="#">회원가입</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--//메뉴-->
+	<div id="contents">
+		<!--캐러셀-->
+		<div id="slide-container" >
+			<div id="slides">
+				<ul class="slides-container">
+					<!--슬라이드1-->
+					<li><img src="img/tvc_banner_1.jpg" alt="출발은 가까운 쏘카존에서" class="preserve" /></li>
+					<!--슬라이드2-->
+					<li><img src="img/tvc_banner_2.jpg" alt="내 주변 3분 거리에서" class="preserve" /></li>
+					<!--슬라이드3-->
+					<li><img src="img/tvc_banner_3.jpg" alt="스마트폰으로 쉽고 빠르게" class="preserve" /></li>
+					<!--슬라이드4-->
+					<li><img src="img/tvc_banner_4.jpg" alt="언제나 어디서든 자유롭게" class="preserve" /></li>
+				</ul>
+				<!--좌우 이동 버튼 -->
+				<nav class="slides-navigation">
+					<a href="#" class="next">&gt;</a>
+					<a href="#" class="prev">&lt;</a>
+				</nav>
+			</div>
+		</div>
+		<!--//캐러셀-->
+
+		<!--비쥬얼배너1,2,3,4-->
+		<div id="visual" class="container">
+			<ul class="visual_area">
+				<li id="visual01">
+					<img src="img/visual1_170719.png" alt="대한민국 1등 카셰어링 #쏘카 - 국내 최다 회원이 함께 쓰는 카셰어링 서비스 쏘카! 지금 바로 가입하고 쏘카 드라이브 떠나세요!">
+					<a href="#" class="v-btn">다양한 차종 둘러보기 &gt;</a>
+				</li>
+				<li id="visual02" class="hide">
+					<img class=" thumbnail" src="img/visual2_160322.png" alt="합리적이고 경제적인 #쏘카 - 10분 단위로 빌릴 수 있어 합리적이고 핫딜, 주중, 심야할인등 다양한 혜택으로 더 경제적인 쏘카!">
+					<a href="#" class="v-btn">쏘카요금보기 &gt;</a>
+				</li>
+				<li id="visual03" class="hide">
+					<img class=" thumbnail" src="img/visual3_160322.png" alt="대한민국 최초 전국 편도 서비스 오픈 - 서울 경기, 인천, 부산, 대구, 대전, 제주 등 전국 주요 도시 어디서나 편도 서비스를 편리하게 이용하세요!">
+					<a href="#" class="v-btn">편도 예약하기 &gt;</a>
+				</li>
+				<li id="visual04" class="hide">
+					<img class=" thumbnail" src="img/visual4_160322.png" alt="함께라서 더 즐겁고 안전한 #쏘카 - 점검주기별 차량점검은 물론, 차량에 이상이 느껴지면 전국 스피드메이트에서 무료 정비!">
+					<a href="#" class="v-btn"></a>
+				</li>
+			</ul>
+			<!--하단 tab으로 배너와 연결-->
+			<ul class="v-tab clearfix">
+				<li class="on pull-left"><a href="#visual01" class="vt1" >SMART SOCAR</a></li>
+				<li class="pull-left"><a href="#visual02" class="vt2">SMART PRICE</a></li>
+				<li class="pull-left"><a href="#visual03" class="vt3">SMART SERVICE</a></li>
+				<li class="pull-left"><a href="#visual04" class="vt4">SMART CARE</a></li>
+			</ul>
+			<!--//비쥬얼배너1,2,3,4-->
+
+			<!--오른쪽 로그인 박스 외 기타 배너-->
+			<div id="right_tab">
+				<div id="r_login">
+					<p class="txt">즐거운 드라이브 라이프의 시작 지금 가입하면 3시간 무료 쿠폰 지급!</p>
+					<p class="log_btn"><a><img src="img/btn_join.png" alt="회원가입하기"><a/></p>	
+				</div>
+				<div class="banner1">
+					<a href="#"><img class="mt3" src="img/banner_person.png" alt="업무용 카셰어링 지원"></a>
+				</div>
+				<div class="banner2">
+					<a href="#"><img class="mt3" src="img/banner_2.png" alt="차종다양화"></a></div>
+				<div class="banner3">
+					<a href="#"><img class="mt3" src="img/banner_3.png" alt="쏘카 채용 사이트 오픈"></a></div>
+			</div>
+			<!--//오른쪽 로그인 박스 외 기타 배너-->
+		</div>
+		<!--//비쥬얼배너1,2,3,4-->
+		<!--이용방법+게시판-->
+		<div id="rule" class="container">
+			<!--이용방법-->
+			<ul class="title">
+				<li><a href="#">쏘카 둘러보기</a></li>
+				<li><a href="#" class="sub"><span>・</span>쏘카 이용규칙</a></li>
+			</ul>
+			<div id="rule_icon" class="clearfix">
+				<ul>
+					<li><a href="#" class="icon1">이용방법</a></li>
+					<li><a href="#" class="icon2">법인혜택</a></li>
+					<li><a href="#" class="icon3">쿠폰북</a></li>
+					<li><a href="#" class="icon4">쏘카 임팩트</a></li>
+					<li><a href="#" class="icon5">쏘카 편도</a></li>
+				</ul>
+			</div>
+			<!--게시판-->
+			<div id="board">
+				<ul class="title">
+					<li>
+						<a href="#board1">공지사항</a>
+					</li>
+					<li>
+						<span>・</span><a href="#board2" class="sub">자주 묻는 질문</a></li>
+					<li><a href="#" class="add">더보기</a></li>
+				</ul>
+				<ul id="board1">
+					<li><a href="#">[공지] 개인정보 열람 및 수정에 대한 안내</a></li>
+					<li><a href="#">[이벤트] #매너쏘카 칭찬 이벤트 (~12/7)</a></li>
+					<li><a href="#">[공지] 대전역 편도 허브존 이동</a></li>
+					<li><a href="#">[공지] 전기차 하이패스 통행료 50% 할인 적용 완료</a></li>
+					<li><a href="#">[공지] 11월 주행 요금 변동 안내 (11월 10일 10시~)</a></li>
+				</ul>
+				<ul id="board2">
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</div>
+			<!--//이용방법+게시판-->
+		</div>	
+	</div>
+
+	<!--side bar-->
+	<div id="sidebar" class="clearfix">
+		<ul class="pull-right">
+			<li><a href="#" class="quick1">쏘카쿠폰 혜택</a></li>
+			<li><a href="#" class="quick2">주행요금 계산하기</a></li>
+			<li><a href="#" class="quick3">쏘카존 신청하기</a></li>
+		</ul>
+		<div class="sidebar_more pull-right">
+			<a href="#" class="quick4"><img src="img/banner_more.png" alt="쏘카쿠폰 받기"></a>
+		</div>
+	</div>
+	<!--//side bar-->
+
+	<!--하단-->
+	<footer>
+		<div class="container clearfix">
+			<div class=" pull-left">	
+				<ul id="fmenu" class="clearfix">
+					<li class="line"><a href="#" >회사소개</a></li>
+					<li class="line"><a href="#">채용안내</a></li>
+					<li class="line"><a href="#">보도자료</a></li>
+					<li class="line"><a href="#">회원이용약관</a></li>
+					<li class="line"><a href="#">개인정보처리방침</a></li>
+					<li class="line"><a href="#">자동차대여약관</a></li>
+					<li><a href="#">위치기반서비스 이용약관</a></li>
+				</ul>
+				<div id="address">
+					<p>(주) 쏘카 통신판매업 신고 : 제 2011-제주조천-0021호, 정보보호 담당자 : 김명훈, 사업자등록번호 : 616-81-90529 대표자 : 조정열 <br/>Tel : 1661-3315, Fax : 02-6969-9333, 주소 : 제주특별자치도 제주시 도령로 129, 5층 (연동,드림플라자) 63126 <br/>
+					제휴문의 : hello@socar.kr, 취재문의 : pr@socar.kr, 법인 쏘카존 개설문의 : infra@socar.kr	
+					</p>
+					<p class="copyr">Copyright&copy; SOCAR ALL rights reserved.</p>
+				</div>
+			</div>
+			<div class="pull-right">
+				<div id="sns">
+					<a href="https://www.facebook.com/socarsharing" class="sns1">페이스북</a>
+					<a href="http://blog.socar.kr/" class="sns2">블로그</a>
+					<a href="#" class="sns3">이메일</a>
+				</div>
+
+				<div id="ficon" class="clearfix">
+					<a href="#"><img src="img/ccm.png" alt="ccm"/></a>
+					<a href="#"><img src="img/eco.png" alt="eco"></a>
+					<a href="#"><img src="img/bcorp.jpg" alt="bcrop"></a>
+					<a href="#"><img src="img/csa.png" alt="csa"></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div id="log_open">
+		<!--검은 배경-->
+		<div class="log_bg" id="background"></div>
+		<div class="log_modal" id="front">
+			<!--로고-->
+			<div class="log_logo"></div>
+			<!--아이디/비밀번호-->
+			<form id="login">
+				<div class="form-group">
+					<label for="user_id" class="col-md-2">아이디</label>
+					<div class="col-md-10">
+						<input type="text" name="user_id" id="user_id">
+					</div>
+				</div>
+
+				<div class="form-group">	
+					<label for="user_pw" class="col-md-2">비밀번호</label>
+					<div class="col-md-10">
+						<input type="password" name="user_pw" id="user_pw">
+					</div>
+				</div>
+
+					<input type="image" src="img/btn_login.png" class="submit" id="log_btn">
+				<div id="log_find">
+					<a href="#" class="line">회원가입</a>
+					<a href="#">아이디 ・ 비밀번호 찾기</a>	
+				</div>
+			</form>
+			<hr style="border:0.5px solid #d5d5d5" />
+			<div id="sns_logo">
+				<a href="#"><img src="img/fb3_n.png" alt="facebook"></a>
+				<a href="#"><img src="img/nv3_n.png" alt="naver"></a>
+				<a href="#"><img src="img/cco3.png" alt="kakao"></a>
+			</div>
+			<a href="#" class="close">닫기</a>	
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="superslides/jquery.easing.1.3.js"></script>
+	<script src="superslides/jquery.superslides.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/regex.js"></script>
+	<script src="js/log_modal.js"></script>
+
+</body>
+</html>

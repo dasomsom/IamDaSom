@@ -1,0 +1,132 @@
+/**공통적으로 사용할 코드**/
+* {
+	font-family: "나눔고딕","맑은고딕","굴림","Helvetica";
+	font-size:16px; color:#222;
+}
+a {
+	text-decoration: none; 
+}
+ol{
+	margin: 0;
+	padding:0;
+}
+
+.container{
+	width:1100px; margin: auto; 
+}
+.bg{
+	background-color: #f6fafb; width:auto;
+}
+.pull-left {float:left;}
+.pull-right{float:right;}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+	float: none;
+}
+.mbottom-10{
+	margin-bottom: 10px;
+}
+.mbottom-30{
+	margin-bottom: 30px;
+}
+.mbottom-100{
+	margin-bottom: 100px;
+}
+.mtop-10{
+	margin-top: 10px;
+}
+.mtop-100{
+	margin-top: 100px;
+}
+.mleft-5{
+	margin-left: 5px;
+}
+.mleft-1{
+	margin-left: 1px;
+}
+.mleft-10{
+	margin-left: 10px;
+}
+.mleft-15{
+	margin-left: 15px;
+}
+.mleft-30{
+	margin-left: 30px;
+}
+.mleft-100{
+	margin-left: 100px;
+}
+.mauto{
+	margin:auto;
+}
+
+.ptop-10{
+	padding-top: 10px;
+}
+.ptop-100{
+	padding-top: 100px;
+}
+.pbottom-30{
+	padding-bottom: 30px;
+}
+.pbottom-100{
+	padding-bottom:100px;
+}
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.inline{
+	display:inline-block;
+}
+.block{
+	display: block;
+}
+button {
+	background: none;
+	border:none;
+}
+
+.ft-20-bold{
+	font-size: 20px;
+	font-weight: 500;
+	color: #666;
+}
+.ft-30-bold{
+	font-size: 30px;
+	font-weight: 500;
+	color: #666;
+}
+.ft-16-mid{
+	font-size: 16px;
+	font-weight: 300;
+	color: #666;
+}
+.ft-16-pt{
+	color: #54bbe8;
+	font-weight: 400;
+	font-size: 16px;
+}
+.ft-15-bold{
+	font-size: 15px;
+	font-weight: 400;
+	color: #666;
+}
+.ft-14-pt{
+	color: #54bbe8;
+	font-weight: 400;
+	font-size: 14px;
+}
+.sr-only{
+	text-indent: -1000000px;
+}
+#hidden{
+	position: absolute;
+}

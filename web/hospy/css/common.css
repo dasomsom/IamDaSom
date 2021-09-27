@@ -1,0 +1,276 @@
+/**-----------------
+    상단 영역
+  -------------------**/
+
+/**상단 gnb영역*/
+#header-top{
+	height: 38px;
+	background: #2c2d2b;
+}
+
+/*gnb, nav 메뉴 가로정렬*/
+#gnb li{
+	display: inline-block;
+}
+
+#gnb a {
+	text-align: center;
+	padding: 10px 15px;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 300;
+	color: #c4c4c4;
+	border-left: 1px solid #9d9d9d;
+}
+
+.rline1 {
+	border-right: 1px solid #9d9d9d;
+}
+
+
+
+/**상단 nav영역**/
+.logo{
+	position: absolute;
+	z-index: 999999;
+	left: 50%;
+	margin-left: -570px;
+}
+
+#nav-title {
+	position: relative;
+}
+
+#nav .nav>ul>li{
+	display: inline-block;
+}
+
+
+/*링크확장*/
+
+#nav .nav>ul>li>a {
+	display: block;
+	padding: 45px 0;
+	width: 140px;
+	font-size: 19px;
+	color: #2c2d2b;
+	line-height: 28px;
+	text-align: left;
+	font-weight: 700;
+}
+
+
+/*2차메뉴
+ *메뉴 숨기기*/
+
+.container-wide{
+	width: 100%;
+}
+
+.nav-list{
+	background: #fff;
+	width: 100%;
+	height: 180px;
+	display: block;
+	border-bottom: 1px solid #2c2d2b;
+	position: absolute;
+	z-index: 999999999;
+	display: none;
+}
+
+.nav-list ul{
+	float: left;
+	width: 140px;
+}
+
+.nav-list ul a{
+	font-size: 14px;
+	line-height: 30px;
+}
+
+
+/**-----------------
+    내용 영역
+ -------------------**/
+
+/**롤링배너**/
+#main-banner {
+	position: relative;
+}
+
+#main_1{
+	position: absolute;
+	z-index: 1000;}
+
+#main_1 .main-bg{
+	padding-left: 30%;
+	margin-left: -640px;
+	overflow: hidden;
+}
+
+#main-banner .main-sub{
+	width: 1140px;
+	margin: auto;
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	margin-left:-570px; 
+}
+
+#main_2 .main-bg{
+	overflow: hidden;
+}
+
+/**banner logo*/
+#main-banner .main-sub img {
+	display: block;
+	padding-bottom: 20px;
+}
+/**양쪽 버튼**/
+.m-btn {
+	font-size: 30px;
+	opacity: 0.3;
+	position: absolute;
+	top:483px;
+	z-index: 200000;
+}
+.prev {
+	left:25px;
+}
+.next{
+	right: 25px;
+}
+/**하단 버튼*/
+#btn_icon{
+	position: absolute;
+	left: 50%;
+	top:770px;
+	z-index: 20000;
+}
+#btn_icon li{
+	display: inline;
+}
+
+/**-----------------
+     프로덕트
+ -------------------**/
+/*타이틀*/
+#product h1{
+	font-size: 37px;
+	line-height: 40px;
+	padding: 50px 0 20px 0;
+}
+
+
+/*리스트*/
+#product .list li{
+	float: left;
+	width: 255px;
+	padding-right:25px; 
+}
+
+#product .list h3{
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px 0;
+}
+
+#product .list p, #training p, #science p, #customer span{
+	font-size: 13px;
+	line-height: 19px;
+	color: #666;
+}
+
+
+/**-----------------
+	그리드
+ -------------------**/
+/*배경*/
+#training{
+	background: url(../images/main/training_bg.jpg) center no-repeat;
+	height: 330px;
+}
+
+#science {
+	background: url(../images/main/science_bg.jpg) center no-repeat;
+	height: 330px;
+}
+
+#training h1 , #science h1{
+	font-size: 32px;
+	line-height: 40px;
+	padding: 81px 0 15px 0;
+	font-weight: 400;
+}
+
+/*버튼*/
+#training button, #science button{
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	background-color:#2c2d2b;
+	padding: 10px 30px;
+	margin: 20px 0 81px 0;
+}
+
+/*오른쪽 정렬*/
+#training .area{
+	margin-right: 150px;
+}
+
+
+/**-----------------
+	커스텀
+ -------------------**/
+/*가로정렬*/
+#customer li{
+	display: inline-block;
+	text-align: center;
+	padding: 70px 0;
+	margin-right: 121px;
+}
+
+#customer li:last-child{
+	margin-right: 0;
+}
+
+#customer img{
+	display: block;
+	padding-bottom: 15px;
+}
+
+
+/**-----------------
+     하단 영역
+ -------------------**/
+footer{
+	background-color: #2c2d2b;
+	padding: 35px 0;
+}
+
+#hsp-nav a{
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	padding:0 10px;
+	border-right: 1px solid #9d9d9d;
+}
+
+address span{
+	color: #9d9d9d;
+	font-weight: 300;
+	font-size: 12px;
+	padding: 0 10px;
+}
+
+#footer {
+	position: relative;
+}
+
+#ft-logo {
+	position: absolute;
+	top: 0;
+	right: 0
+}

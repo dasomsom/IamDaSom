@@ -1,0 +1,178 @@
+/**
+===================================================================
+  * CSCENTER
+  + FAQ
+===================================================================
+  ** 1:1 문의는 form.css
+----------------------------------------------------------*/
+
+.box900 { width: 900px; margin: auto; }
+#faq { margin: 180px 0 140px;  }
+#faq > div:first-child ul > li { 
+	width: 180px; height: 180px; float: left;  padding: 10px;
+	border:1px solid #d5d5d5; margin-right: 30px; line-height: 20px;
+}
+#faq > div:first-child ul > li:last-child { margin-right: 0; }
+#faq > div:first-child ul > li:hover {
+	background-color: rgba(111, 192, 0, 0.2); border:1px solid #6fc000;
+	-webkit-transition: background-color .8s, color .8s;
+}
+
+/* icon 제어
+----------------------------------------------------------*/
+#faq > div:first-child ul > li > a:first-child { 
+	display: block; width: 80px; height: 80px;
+	margin: auto; margin-bottom: 5px;
+}
+#faq > div:first-child .bg1 { 
+	background: url(../img/icon/faq.png) 4px -5px no-repeat;
+	background-size:165px;
+}
+#faq > div:first-child .bg2,
+#faq > div:first-child .bg3 { 
+	background: url(../img/icon/faq.png) 5px -155px no-repeat;
+	background-size:155px;
+}
+#faq > div:first-child .bg4 { 
+	background: url(../img/icon/faq.png) 3px -90px no-repeat;
+	background-size:165px;
+}
+/* icon 제어 - hover
+----------------------------------------------------------*/
+#faq > div:first-child .bg1:hover { 
+	background: url(../img/icon/faq.png) -90px -5px no-repeat;
+	background-size:165px;
+}
+#faq > div:first-child .bg2:hover,
+#faq > div:first-child .bg3:hover { 
+	background: url(../img/icon/faq.png) -83px -155px no-repeat;
+	background-size:155px;
+}
+#faq > div:first-child .bg4:hover { 
+	background: url(../img/icon/faq.png) -92px -90px no-repeat;
+	background-size:165px;
+}
+
+.font {
+	width: 230px; line-height: 43px;
+	white-space: nowrap;   
+    overflow: hidden;        
+    text-overflow: ellipsis; 
+}
+.line43 {line-height: 43px;}
+.noti, .delivbox { 
+	width: 432px; height: 432px; 
+	border:1px solid #d5d5d5; margin-right: 30px;
+}
+.noti { border:0; }
+.noti > div > h2 { padding: 0 10px; border-top: 1px solid #eee; border-bottom: 1px solid #eee;}
+.noti > div:first-child { border-top: 3px solid ; }
+.noti > div:last-child { border-bottom: 0; }
+.delivbox { margin-right: 0; }
+.delivbox img { margin: 90px 0 70px 0; }
+.delivbox input{ width: 80%; text-indent: 10px; font-size: 14px; margin: auto;}
+.delivbox button {
+	width: 80%; padding: 10px 0; margin-top: 30px;
+	background: #6fc000; color: #fff;font-size: 20px; border:1px solid #6fc000;
+	/*position: absolute; bottom: 25px; left: 50%; margin-left: -125px;*/
+}
+.delivbox button:hover{
+	color: #6fc000; background-color: rgba(111, 192, 0, 0.3); border:1px solid #6fc000;
+	-webkit-transition: background-color .8s, color .8s;
+}
+/**
+===================================================================
+  * CSCENTER
+  + Notice
+===================================================================
+*/
+#notice { margin: 180px 0 140px; }
+.collapse { width: 900px; margin: auto;}
+.collapse-title {
+    background-color: rgba(238, 238, 238, 0.5);
+    border: 1px solid #d5d5d5;
+}
+.collapse-title:hover {
+	background-color: rgba(111, 192, 0, 0.2); 
+	-webkit-transition: background-color .8s, color .8s;
+}
+.collapse-title a {
+    display: block;
+    width: 97%;   padding: 12px;
+    color: #222;
+    font-size: 14px;   text-decoration: none;
+}
+.content {
+    padding: 12px 15px;   font-size: 13px; line-height: 16px;
+    border-left: 1px solid #d5d5d5;
+    border-right: 1px solid #d5d5d5;
+    display: none;
+}  
+.content > div { width: 90%; margin: auto; } 
+.content img {
+	width: 100%; margin:auto; padding-top: 40px;
+}
+.content:last-child {  border-bottom: 1px solid #d5d5d5; }
+
+
+
+
+
+/**
+------------------------------------------------------------------
+  * 노트북
+------------------------------------------------------------------
+*/
+
+@media(max-width:1440px){
+	#faq .box900 { width: 750px; margin: auto; }
+	#faq, #notice { margin: 140px 0 130px;  }
+
+	#faq > div:first-child ul > li { 
+		width: 143px; height: 143px; float: left; font-size: 14px; line-height: 18px;
+		border:1px solid #d5d5d5; margin-right: 30px;
+	}
+	#faq > div:first-child ul > li:last-child { margin-right: 0; }
+	.noti, .delivbox { width: 358px; height: 358px; }
+	
+	/* icon 제어
+	----------------------------------------------------------*/
+	#faq > div:first-child ul > li > a:first-child {    
+		width: 65px; height: 65px; margin-bottom: 5px;
+	}
+	#faq > div:first-child .bg1 { 
+		background: url(../img/icon/faq.png) 2px -5px no-repeat;
+		background-size:140px;
+	}
+
+	#faq > div:first-child .bg2,
+	#faq > div:first-child .bg3 { 
+		background: url(../img/icon/faq.png) 5px -130px no-repeat;
+		background-size:130px;
+	}
+	#faq > div:first-child .bg4 { 
+		background: url(../img/icon/faq.png) 0px -75px no-repeat;
+		background-size:140px;
+	}
+	/* icon 제어 - hover
+	----------------------------------------------------------*/
+	#faq > div:first-child .bg1:hover { 
+		background: url(../img/icon/faq.png) -78px -5px no-repeat;
+		background-size:140px;
+	}
+	#faq > div:first-child .bg2:hover,
+	#faq > div:first-child .bg3:hover { 
+		background: url(../img/icon/faq.png) -70px -130px no-repeat;
+		background-size:130px;
+	}
+	#faq > div:first-child .bg4:hover { 
+		background: url(../img/icon/faq.png) -80px -75px no-repeat;
+		background-size:140px;
+	}
+
+	#faq .box900 > div:nth-child(2),
+	#faq .box900 >div:last-child { margin-top: 30px; }
+	.delivbox img { margin: 60px 0 40px 0; }
+
+}
+

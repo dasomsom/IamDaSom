@@ -1,0 +1,281 @@
+
+
+/**메인페이지 상단-top**/
+.header_top {
+	height:30px; padding-top:5px;
+	border-bottom: 1px solid #d4d4d4;
+}
+.header_top span {
+	font-size: 13px;
+    color:#d4d4d4;
+    /**border-bottom: 2px #d4d4d4;**/
+}
+.header_top #btn_pmo {
+	background: #fff;
+}
+.header_top img.ico {
+    vertical-align: middle;
+}
+/**링크**/
+.header_top #gnb li {
+	display:inline-block;
+	text-align: center;
+}
+/**링크 확장 **/
+.header_top #gnb li a {
+	font-size: 13px;
+	padding:7px 10px;
+	display: block;
+	width: auto;
+}
+
+/**브렌드 로고**/
+.brand_logo {
+	padding:15px 0 20px 0;
+}
+/**상단 미니배너**/
+.mini_banner .delivery_icon {
+	padding-top:5px;
+	padding-left:10px;
+	vertical-align: middle;
+}
+.mini_banner span {
+	color:#68bee1;
+	padding-left:10px;
+	font-size: 16px;
+	font-weight: 400;
+}
+/**상단-bottom**/
+.header_bottom {
+	padding:10px 0;
+}
+.header_bottom img {
+	width:28px; height: 28px;
+	vertical-align: middle;
+	margin-right:5px;
+}
+
+/**링크**/
+.header_bottom #menu_top li {
+	display: inline-block;
+	text-align: center;
+}
+
+/**링크확장**/
+.header_bottom #menu_top li a {
+	padding:10px 40px;
+	display: block;
+	width: auto;
+}
+/**마우스오버**/
+.header_bottom #menu_top li a:hover{
+	color:#68bee1;
+}
+
+/**footer**/
+.notice_bg {
+	background: #939393;
+}
+.notice, #company {
+	width:1000px;
+	padding:37px 0;
+	margin: auto;
+	position: relative;
+}
+/**일렬 정렬**/
+
+.notice h2 {
+	margin-bottom:16px;
+	font-size:20px;
+	color:#fff;
+}
+.notice a, p,h3 {
+	color: #fff;
+}
+/**공지사항**/
+.board{
+	width:270px;
+	margin-right:80px;
+	position:relative;
+}
+.board li a {
+	display:block;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	line-height:34px;
+	font-size:15px;
+	width:100%;
+	color:#e0e0e0;
+}
+.board .btn_more {
+	font-size: 14px;
+	color:#e0e0e0;
+	position:absolute;
+	top:0;
+	right:0;
+}
+/**퀵 아이콘**/
+.q_icon {
+	margin-right:70px;
+	margin-top:25px;
+}
+.q_icon li {
+	display: inline-block;
+	width:90px; height:90px;
+	border-radius:50%;
+	background: #838383;
+	text-align: center;
+	
+}
+.q_icon li img {
+	display:block;
+	position:relative;
+	margin:auto;
+	margin-top:24px;
+	margin-bottom: 50px;
+}
+.q_icon li span{
+	font-size:15px;
+	color:#e0e0e0;
+}
+.q_icon li:nth-child(2){
+	margin:0 25px;
+}
+/**센터정보**/
+.center_info{
+	height:180px;
+	position: absolute;
+	right: 0;
+	top: 37px;
+}
+.center_info > a {
+	font-size:32px;
+	color:#52c8fb;
+}
+.center_info img {
+	padding-right: 10px;
+}
+.center_info h3, p {
+	font-size:14px;
+	color:#e0e0e0;
+	line-height: 22px;
+	font-weight: 300;
+}
+.center_info h3{
+	font-weight:400;
+	padding-top:20px;
+}
+/**사업자 정보**/
+#company{
+	margin-top:25px;
+	margin-bottom: 120px;
+	position: relative;
+}
+.logo_pmo{
+	margin-right: 60px;
+}
+#area_info a {
+	font-size: 13px;
+	color:#999;
+	font-weight: 400;
+}
+#area_info li {
+	display: inline-block;
+	text-align: center;
+}
+#area_info li a{
+	display:block;
+	padding-right:20px;
+}
+.address address, span {
+	font-size: 13px;
+	color:#999;
+	font-weight: 300;
+	line-height: 20px;
+}
+address{
+	margin-top:15px;
+}
+#pmo_select{
+	width:187px;
+	font-size: 13px;
+	color:#999;
+	font-weight: 300;
+	background-color: #fff;
+}
+.ft_right{
+	position: absolute;
+	right: 0;
+	top: 30px;
+}
+.ccm_logo{
+	padding-top: 20px !important;
+}
+/**주문 고정바**/
+.order_bar {
+	width:100%;
+	background: #333;
+	height:60px;
+	position: fixed;
+	left:0;
+	bottom:0;
+}
+/**footer영역 위로 올리기**/
+footer{
+	padding-bottom: 60px;
+}
+.order_bar .order_left img {
+	vertical-align: middle;
+}
+.order_left #btn_pt1, #btn_pt2 {
+	padding-left: 25px;
+	font-size: 18px;
+	color:#52c8fb;
+	font-weight: 400;
+}
+#cash #btn_pt2 {
+	font-size:24px;
+}
+.order_left #btn_pt1 > span, #btn_pt2>span{
+	font-size: 14px;
+	color:#52c8fb;
+}
+.order_left #cash p {
+	font-size: 14px;
+	color:#fff;
+	font-weight: 400;
+	margin-top: 18px;
+	margin-left: 25px;
+}
+
+.order_left li.cart {
+	padding-right:30px;
+	margin-top: 15px;
+	border-right:1px solid #999;
+}
+/**버튼 위치 조정**/
+.order_right{
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+#area_order{
+	position: relative;
+}
+.order_btn{
+	border-radius: 30px;
+	background: #52c8fb;
+	border-style: none;
+	width:150px;
+	height: 40px;
+	color:#fff;
+	margin-right: 5px;
+}
+.top_btn{
+	display: inline-block;
+	width: 40px; height: 40px; 
+	line-height: 2.4; text-align: center;
+	border-radius: 50%;
+	border:1px solid #fff;
+}

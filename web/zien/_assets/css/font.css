@@ -1,0 +1,28 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+
+html, body, div, span, p,
+a, address, b, u, i,strong, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, button, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+footer, header,
+menu, nav, section
+{ font-family: 'Noto Sans KR', sans-serif; font-weight: 400;  line-height: 20px;}
+h1, h2, h3, h4, h5, h6
+{ font-family: 'Noto Sans KR', sans-serif; font-weight:700;  line-height: 20px;}
+
+@media(max-width: 1440px) {
+
+html, body, div, span, p,
+a, address, b, u, i,strong, 
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, button, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+footer, header,
+menu, nav, section
+{ font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 14px; line-height: 18px;}
+h1, h2, h3, h4, h5, h6
+{ font-family: 'Noto Sans KR', sans-serif; font-weight:700; font-size: 18px; line-height: 18px;}
+
+}

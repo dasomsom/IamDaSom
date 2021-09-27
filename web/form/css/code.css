@@ -1,0 +1,117 @@
+
+
+
+
+/**공통**/
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "나눔고딕", "맑은고딕", "굴림", "Helvetica";
+        
+    }
+	hr { border: 1px solid #d5d5d5;} /*상단 hr*/
+    .line { border: 0.5px solid #d5d5d5; margin: 30px 0 15px 0;} /*하단 hr*/    
+	.font300{font-weight: 300; color: #666;}
+    .text-center { text-align: center;}
+
+    /**padding*/
+	.pbottom20 {padding-bottom: 20px;}
+    .ptop30 {padding-top: 30px;}
+    .ptop20 {padding-top: 20px;}
+    .ptop5 {padding-top: 5px;}
+    .plr20 {padding: 0 20px;}
+
+    /*margin*/
+    .mleft15 {margin-left: 15px;}
+    .mbottom15 {margin-bottom: 15px;}
+    .mr5{margin-right: 5px;}
+
+/*_______________________________________________________________*/    
+
+	/**영역**/
+    .form-horizontal {
+        border: 5px solid #c0c722;
+        margin: auto;
+        margin-top:30px;
+        width: 800px;
+        padding: 35px 30px;
+
+    }
+
+    .col-md-2 {
+        width: 20%;
+        display: block;
+        float: left;
+        font-size: 15px;
+        font-weight: 700;
+        padding-top: 7px;
+        color: #666;
+        text-indent: 15px;
+    }
+
+    .col-md-10 {
+        width: 80%;
+        display: block;
+        float: left;
+        font-size: 15px;
+        color: #666;
+        font-weight: 300;
+    }
+    .form-group:after {
+        content: '';
+        display: block;
+        clear: both;
+        float: none;
+    }
+    /**제목**/
+	#title { 
+        height: 60px; text-align: center; 
+        padding: 5px 0 15px 0; 
+        font-weight: 600; font-size: 32px;}
+
+    /**기타**/
+    .point {color: red; margin-left: 5px; }
+    /** input요소 **/
+    .chs_btn { margin-right: 5px; margin-left: 15px;}
+    .b_btn {margin-left: 5px; margin-right: 15px; font-weight: 300;}
+    .form-control {width: 120px; padding: 5px 0; font-size: 14px; border:1px solid #d5d5d5;}
+	/**카카오 아이디**/
+    .kakao {width: 120px; padding: 2px 0; font-size: 14px; border:1px solid #d5d5d5;}
+    /** disabled 속성일때 적용*/
+    .kakao[disabled] {background-color: #eee;}
+    .ads_btn{background-color: #777; color: #fff; font-size: 14px; text-decoration:none; padding: 6px 7px 5px 7px;}
+
+    /*주소 form 겹침 방지*/
+    .rest {padding:5px 5px 0 0; }
+    .w200 {width: 200px;}
+
+    /**건축규모**/
+    .form-box {width: 50px; padding: 5px 0; margin: 0 5px; font-size: 14px; border:1px solid #d5d5d5; text-align: center;}
+    /**드롭박스**/
+    .drop-control {height: 25px;}
+    /**q&a*/
+    .qna-title {width: 625px; padding: 5px 0; font-size: 14px; border:1px solid #d5d5d5;}
+    .qna-control {width: 625px; height: 150px; padding: 5px 0; font-size: 14px; border:1px solid #d5d5d5;}
+    .qna-subtitle {vertical-align: middle;}
+    /*사진*/
+    .file-control{font-size: 12px !important; width: 220px; padding: 5px; font-size: 14px; border:1px solid #d5d5d5; }
+    /*상담 신청 버튼*
+    .btn1 {
+        width: 80px; height: 30px;
+        padding: 13px 25px;
+        background-color: #c0c722; color: #fff; 
+        text-decoration: none; text-align: center;
+        font-weight: 600; font-size: 18px;
+    }*/
+
+    .form-horizontal > div> .btn1{ 
+        width: 160px; height: 50px;
+        
+        background-color: #c0c722; color: #fff; 
+        text-decoration: none; text-align: center;
+        font-weight: 600; font-size: 18px;
+        /**구글에서 라운드 제거가 안될때!*/
+        -webkit-border-radius:0; 
+        border:none; 
+    }
+

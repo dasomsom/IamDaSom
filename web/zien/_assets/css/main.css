@@ -1,0 +1,219 @@
+/**
+===================================================================
+  * 메인 css
+===================================================================
+*/
+
+/**
+------------------------------------------------------------------
+  * 공 통
+  + .container 넓이는 100%
+------------------------------------------------------------------
+*/
+#fullpage { width: 100%; height: 100%; position: absolute; top: 0;}
+.section { width: 100%; height: 100%; }
+.menu-right { position: absolute; right: 50px; top: 30px; z-index: 999;}
+.menu-right > li { float: left; }
+.menu-right > li > a { text-shadow: 1px 1px 1px #d5d5d5; font-weight: 500; }
+/*
+------------------------------------------------------------------
+  * 메 인 1 - 슬라이드
+------------------------------------------------------------------
+*/
+#page1 li:first-child {
+ 	background: url(../img/main2.png) no-repeat;
+	background-size: cover; position: relative;
+}
+.main-area2 {
+	position: absolute; margin-left: 290px; top: 30%; margin-left: 300px;
+}
+
+#page1 li:nth-child(2) {
+	background: url(../img/main3.jpg) right top no-repeat;
+	background-size: cover; position: relative;
+}
+.main-area3  {     
+	position: absolute;
+    right: 200px; top: 50%; margin-top: -135px; 
+    transform: scale(1.1,1.1);
+}
+#page1 li:nth-child(3) {
+	background: url(../img/art-main-1.jpg) 40px 0 no-repeat; 
+	background-size: cover;	 position: relative;
+}
+.main-area1 {
+	background: url(../img/title_min.png) no-repeat; width: 460px; height: 305px;
+	position: absolute; left: 50%; margin-left: -200px; top: 35%;
+	transform: scale(1.1,1.1);
+}
+
+/*슬라이드 화살표 조정*/
+.fp-slidesNav { }
+
+/*
+------------------------------------------------------------------
+  * 메 인 2 - brand
+------------------------------------------------------------------
+*/
+
+#page2 { 
+	height: 100%;
+	background: url(../img/brand_main.png) 15px 0px no-repeat;  
+}
+#page2 .bbg {
+	position: absolute; top: 0; left: 0; z-index: 1;
+	background-color: rgba(0,0,0,0.3); width: 100%; height: 100%;
+}
+.bbg-img-position{ 
+	position: absolute; left: 50%; margin-left: -225px; top: 40%; 
+}
+.bbt-position { 
+	position: absolute; left: 50%; top: 63%; z-index: 22;
+} 
+#bbt { 
+	background:url(../img/icon/icon_15.png) center center no-repeat #fff; 
+	width: 65px; height: 65px; text-indent: -100000px;
+	box-shadow: 1px 0 1px rgba(0,0,0,0.2);
+}
+#bbt:hover {
+	background: url(../img/icon/icon_h_15.png) center center no-repeat #6fc000;
+	-webkit-transition: background-color .8s, color .8s; 
+}
+ 
+	
+
+/*
+------------------------------------------------------------------
+  * 메 인 3 - shop
+------------------------------------------------------------------
+*/
+
+#shop { position: relative; width: 100%; height: 100%; overflow: hidden; }
+#shop > div:first-child {
+	position: absolute; z-index: 33;
+	width: 100%; height: 100%; background: rgba(0, 0, 60, 0.5); }
+#shop .img { 
+	width: 100%; height: 100%;
+	background: url(../img/shop.jpg) 35px -100px no-repeat; 
+	background-size: cover; transform: scale(1.1,1.1);
+}
+#shop > .cont {
+	position: absolute; z-index: 44; top: 50%; left: 50%; 
+	margin-left: -400px; margin-top: -100px;
+	background: rgba(0, 0, 0, 0.4); padding: 80px 100px 30px; 
+}
+#shop > .cont h2 { 
+	width: 670px; 
+	color: #fff; border-bottom: 3px solid #fff;
+	font-size: 75px; font-weight: 700; line-height: 80px; 
+}
+#shop > .cont p {
+	color: #fff; line-height: 25px; font-weight: 300;
+	width: 650px; padding-top: 25px; margin-right: 0;
+}
+#shop > .cont > .bt { 
+	border: 1px solid #fff; line-height: 100px;
+	padding: 10px 40px; color: #fff;
+}
+#shop > .cont > .bt:hover {
+	color:#00003c;
+	background-color: rgba(255, 255, 255, 0.8);
+	/* 속도 애니메이션 */
+ 	-webkit-transition: background-color .8s, color .8s;
+ }
+
+/**
+------------------------------------------------------------------
+  * 노 트 북	
+------------------------------------------------------------------
+*/
+   
+@media(max-width: 1440px) {
+	/* 메 인 1 - 슬라이드
+	-------------------------------------------------------------
+	*/
+	.main-area2 { margin-left: 230px; }
+	.main-area3  { right: 130px; }
+
+	/* 메 인 2 - brand
+	-------------------------------------------------------------
+	*/
+	#page2 { 
+		background: url(../img/brand_main.png) 0 -200px no-repeat; 
+	}
+	.bbg-img-position   { top: 35%;}
+	.bbt-position  		{ top: 65%;} 
+
+	/* 메 인 3 - shop
+	-------------------------------------------------------------
+	*/
+	#shop .img { 
+		background: url(../img/shop.jpg) -10px -110px no-repeat; 
+		transform: scale(1,1);
+	}
+	#shop > .cont { margin-top: -140px; }
+}	
+
+
+
+/**
+------------------------------------------------------------------
+  * 모 바 일 
+------------------------------------------------------------------
+*/
+
+
+@media (max-width: 767px) {
+	/*
+	------------------------------------------------------------------
+	  * 메 인 1 - 슬라이드
+	------------------------------------------------------------------
+	*/
+
+	#page1 li:first-child {
+	 	background: url(../img/main2.png) right 88px no-repeat;
+		background-size: cover; 
+	}
+	.main-area2 {
+		top:0; left: 50%; margin-left: -285px; transform: scale(0.8,0.8); 
+	}
+	#fullpage #page1 ul  .slide  .bg { 
+		display: block; width: 100%; height: 270px; background: rgba(0,0,0,0.4); 
+		position: absolute; bottom: 0;
+	}
+
+	#page1 li:nth-child(2) {
+		background:url(../img/main3.jpg) -110px 88px no-repeat;
+		background-size: cover; 
+	}
+	.main-area3  {     
+		bottom: 0; left: 50%; margin-left: -215px; margin-top: -100px;
+	    transform: scale(0.8,0.8);
+	}
+	#page1 li:nth-child(3) {
+		background: url(../img/main1.png) center 88px no-repeat; 
+		background-size: cover;	 
+	}
+	.main-area1 {
+		background: url(../img/main-1-min.png) no-repeat;
+		bottom: 0; left: 50%; margin-left: -230px; margin-top: 195px;
+    	transform: scale(0.82,0.83);
+	}
+
+	/*슬라이드 화살표 조정*/
+	.fp-controlArrow.fp-prev { left: 20px!important; }
+	
+	/* 메 인 2 - brand
+	------------------------------------------------------------------
+	*/
+	.bbg-img-position{ 
+		margin-left: -262px; top: 40%; }
+	.bbt-position { margin-left: -40px; top: 70%; } 
+	#bbt { 
+		background:url(../img/icon/icon_15.png) center center no-repeat #fff; 
+		width: 65px; height: 65px; text-indent: -100000px;
+		box-shadow: 1px 0 1px rgba(0,0,0,0.2);
+	}
+	#bbt:active {background: url(../img/icon/icon_h_15.png) center center no-repeat #6fc000; }
+
+}

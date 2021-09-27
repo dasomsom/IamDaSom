@@ -1,0 +1,153 @@
+/**
+===================================================================
+  * 공통 css
+  * 상/하단 css 
+  * 사이드 바 css
+===================================================================
+*/
+
+
+/**
+------------------------------------------------------------------
+  * 공 통
+------------------------------------------------------------------
+*/
+*{
+	font-family: "나눔고딕","맑은고딕","굴림","Helvetica";
+	font-size:12px; color:#666;
+ }
+
+a{text-decoration: none;}
+.container {width: 984px; margin: auto;}
+
+/**dummy*/
+#dummy{height: 500px;}
+
+.pull-left {float: left;}
+.pull-right {float: right;}
+.clearfix:after{content: ''; display: block; clear: both; float: none;}
+
+/*margin*/
+.mt3 {margin-top: 3px;}
+
+
+
+
+/**
+------------------------------------------------------------------
+  * 사 이 드 바
+------------------------------------------------------------------
+*/
+/**고정하기**/
+#sidebar {
+	position: fixed;
+	bottom:120px;
+	right: 0;
+	z-index: 30000;
+}
+#sidebar>ul >li> a {
+	width: 51px; height: 73px;
+	display: block;
+	text-indent:-100000px;
+	border:1px solid #e4e4e4;
+}
+/*이미지 지정*/
+.quick1 {
+	background: url(../img/quick_side_menu_141111.gif) -1px -1px no-repeat;
+}
+.quick2 {
+	background: url(../img/quick_side_menu_141111.gif) -1px -151px no-repeat;
+}
+.quick3 {
+	background: url(../img/quick_side_menu_141111.gif) -1px -226px no-repeat;
+}
+/*hover*/
+.quick1:hover {
+	background: url(../img/quick_side_menu_141111.gif) -60px -1px no-repeat;
+}
+.quick2:hover {
+	background: url(../img/quick_side_menu_141111.gif) -60px -151px no-repeat;
+}
+.quick3:hover {
+	background: url(../img/quick_side_menu_141111.gif) -60px -226px no-repeat;
+}
+
+
+/**
+------------------------------------------------------------------
+  * 상 단
+------------------------------------------------------------------
+*/
+#header {
+	height: 70px; width: 100%;
+	background-color: #fff; 
+	border-top: 4px solid #00d2ff;
+	border-bottom: 1px solid #e4e4e4;
+}
+/**logo size*/
+.br_logo{width: 80px; margin-right: 25px; margin-top: 29px;}
+
+/**상단메뉴 가로정렬*/
+.menu li {
+	float: left; margin-left: 20px; margin-top: 32px;
+	font-size: 14px; font-weight: 600;
+}
+.point{ color:#00d2ff; }
+
+/**상단 gnb오른쪽 정렬*/
+#header > .container {
+	position: relative;
+}
+#right_menu {
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+#gnb button { margin-left: 10px; border-radius: 5px;}
+#gnb a {
+	font-size: 12px; padding: 9px;
+	line-height: 22px;
+}
+#gnb span{ color:#e4e4e4; }
+
+
+
+
+/**
+------------------------------------------------------------------
+  * 하 단
+------------------------------------------------------------------
+*/
+/*하단 높이*/
+footer{
+	width: 100%;
+	height: 105px;
+	background: #454b55 url(../img/footer_bg.gif) repeat-x left top;
+	padding: 25px 0 80px 0;
+}
+/*컨텐츠 가로정렬*/
+#fmenu li {float: left; }
+#fmenu li.line:after {
+	content:'|';
+	padding-left:10px;
+	padding-right: 10px; 
+	color: #fff; font-size: 12px; 
+}
+#fmenu li a {
+	color: #fff; font-size: 12px; 
+}
+
+/*address*/
+#address {
+	margin-top: 16px; font-size: 12px; float: left; line-height: 18px; 
+}
+#address p {color: #888;}
+.copyr { padding-top: 10px; }
+
+/*아이콘 이미지 조정*/
+#ficon  { float: right; }
+#ficon a {padding: 0 5px;}
+
+/*footer의 sns이미지는 background-position으로 조정*/
+#sns { float: right; } 
+#footer #sns .sns1  {background: url(../img/footer_sns.png);}

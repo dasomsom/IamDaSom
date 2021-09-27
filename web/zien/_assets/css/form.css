@@ -1,0 +1,304 @@
+/**
+===================================================================
+  * form
+  + 로그인 회원가입 
+  + 1:1 문의
+===================================================================
+*/
+/* <form>
+------------------------------------------------------------------*/
+
+.form-group:after {
+	display: block;
+	content: ''; clear: both; float: none;
+}
+
+.form-control{
+	display: block;
+	padding: 10px 0;
+	text-indent: 20px;
+    font-size: 16px; 
+    border: 1px solid #d5d5d5;
+}
+.col-md-2 { 
+	width: 20%;  
+	display: block;
+    float: left; line-height: 34px;
+    font-weight: 700; text-indent: 50px;
+    text-align: left;
+}
+.col-md-10 { 
+	width: 80%; 
+	display: block;
+    float: left;
+    font-weight: 300;
+}
+/**
+===================================================================
+  * 약관동의 css
+  *#agreeform
+===================================================================
+*/
+#agreeform {
+	padding-bottom: 60px;
+	border-bottom: 1px solid #d5d5d5;
+}
+#agreeform  textarea { 
+	width: 100%; height: 120px; 
+	border-color: #d5d5d5; 
+	overflow-x: hidden; overflow:scroll;  
+}
+#agreeform > div:first-child {
+	border-bottom: 1px solid; padding-bottom: 5px; margin-bottom: 15px;
+}
+#agreeform > div:nth-child(2) { padding-bottom: 0; }
+#agreeform > div:nth-child(4) { padding-bottom: 10px; }
+/**
+===================================================================
+  * join css
+===================================================================
+*/
+
+.join_container {
+	width: 700px;/* height: 100%; */margin: auto; margin-top: 155px;
+}
+#join { margin: 120px 0 120px; }
+.wrap { height: 730px;}
+#join .title {
+	border-bottom: 1px solid #222;
+	padding-bottom: 20px; margin-bottom: 18px;
+}
+#join .wrap > .sub { 
+	width: 100%; height: 110px;  
+	background: #eee; 
+	font-size: 14px; text-align: center;
+	margin-bottom: 40px; border-top: 1px solid #666; 
+}
+#join  .wrap > .sub > p { margin-bottom: 25px; padding: 20px; line-height: 20px;  }
+#join  .wrap > .sub > p > span {line-height: 40px;}
+#join .joinbox {
+    border: 1px solid #929292;
+    margin: auto; 
+    padding: 30px 30px;
+}
+
+
+#join .form-group {
+    padding: 10px 0 10px 0;
+}
+
+#join .form-group:last-child {
+    border-bottom: 0;
+}
+
+#join .col-md-2 {
+    width: 20%;
+    display: block;
+    float: left;
+    font-size: 14px;
+    padding-top: 7px;
+    text-indent: 5px;
+}
+
+#join .col-md-10 {
+    width: 80%;
+    display: block;
+    float: left;
+}
+
+#join .form-control {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+    border: 1px solid #eee;
+	text-indent: 20px;
+}
+.b_btn {
+	height: 50px; width: 315px; margin: auto;
+} 
+.b_btn button {
+	width: 150px;
+	line-height: 43px;
+	border: 1px solid #6fc000;
+	color: #6fc000; font-size: 16px; 
+}
+.b_btn button:first-child { background: #6fc000; color: #fff; }
+.b_btn button:hover {
+	color: #6fc000; background-color: rgba(111, 192, 0, 0.3); 
+	-webkit-transition: background-color .8s, color .8s;
+}
+#join #tel-front { width: 23%; }
+
+/**
+------------------------------------------------------------------
+  * CS CENTER
+  -> 1:1 문의
+------------------------------------------------------------------
+*/
+.box750 { width: 750px; margin: auto; }
+#cscenter { margin-top: 150px; height: 100%; }
+.cs .title { width: 900px; margin:auto; border-bottom: 3px solid #6fc000; }
+.cs .title li:first-child { color: #6fc000; line-height: 50px; font-weight: 800;}
+/*내용 박스*/
+#QAbox { width: 700px; margin-top: 50px;}
+#cscenter .arch-box > div:last-child { width: 1100px; margin:100px auto; }
+
+#QAbox .form-group { height: 48px;}
+#QAbox .form-control { padding: 8px 0 9px; text-indent: 10px; border-color:#b1b0b0;}
+.txt-box { width: 79.7%; }
+#QAbox #f-txt { height: 150px; overflow: scroll; overflow-x: hidden;}
+#cs-front, #tel-front, #email-front  { 
+	height: 18px; position: relative;
+	border: 1px solid #b1b0b0; ; 
+}
+#user_name { width: 32.2%;}
+
+.tel-box, .ebox {
+	padding: 8px 0 9px;
+ 	font-size: 16px; text-indent: 10px;
+    border: 1px solid #b1b0b0; ;
+}
+.ebox { width: 40%; }
+#email-front {
+ 	width: 53.2%; padding-left: 4px;
+	float: left; 
+}
+.tel-box { width: 21.2%; }
+#tel-front { width: 15%; float: left; margin-right: 20px;}
+
+
+/* drop-box 제어
+----------------------------------------------------------*/
+
+#email-front button, #tel-front button, #cs-front button {
+	position: absolute; right: -4px; top: 4px;
+}
+#email-front button img, #tel-front button img, #cs-front button img {
+	width: 25px; height: 25px;
+    transform: rotate(-90deg);   
+}
+.drop-box{
+	width: 100%; border: 1px solid #b6e27c; 
+	margin-left: -1px; 
+	position: relative; z-index: 999999;
+}
+.drop-box li { 
+	border-bottom: 1px solid #b6e27c;   
+	background: #fff; line-height: 27px; font-size: 14px;
+}
+.drop-box li:last-child{ border:none; } 
+.drop-box li:hover{ 
+	background: #b6e27c; 
+}
+
+.img-box div {
+	width: 300px; height: 360px; margin-bottom: 10px;
+	background:url(../img/winterwares-cover.jpg) -900px -460px no-repeat;
+	background-size:2045px;
+}
+#cscenter #QAbox > div:last-child > button {
+	width: 80%; line-height: 55px; float: right; margin-top: 50px;
+	background: #6fc000; color: #fff;font-size: 20px; border:1px solid #6fc000;
+	/*position: absolute; bottom: 25px; left: 50%; margin-left: -125px;*/
+}
+#cscenter #QAbox > div:last-child > button:hover{
+	color: #6fc000; background-color: rgba(111, 192, 0, 0.3); border:1px solid #6fc000;
+	-webkit-transition: background-color .8s, color .8s;
+
+}
+
+/**
+===================================================================
+  * 약관동의 css
+  *#agreeform
+===================================================================
+*/
+
+/* 동의 버튼
+----------------------------------------------------------*/
+.agreebt { 
+	width: 500px; margin: auto; padding-top: 40px;
+	text-align: center;
+}
+.agreebt > a { 
+	display:inline-block; width: 150px; padding: 15px 0; 
+	color:#fff; text-align: center;
+	border: 1px solid #6fc000; background-color: #6fc000;
+}
+.agreebt > a:last-child { 
+	color:#6fc000; background-color: #fff;
+}
+.agreebt > a:hover {
+	color: #6fc000; background-color: transparent;  border:1px solid #6fc000;
+	-webkit-transition: background-color .8s, color .8s;
+}
+.agreebt > a:last-child:hover {
+	background-color: rgba(111, 192, 0, 0.3); 
+}
+
+/**
+------------------------------------------------------------------
+  * 노트북
+------------------------------------------------------------------
+*/
+
+@media(max-width:1440px){
+	.join_container { margin-top: 55px; }
+	.control-box { width: 1090px; }
+	#cscenter {margin-top: 120px;}
+	#QAbox, 
+	#cscenter #QAbox > div:last-child > button 
+	{ margin-top: 30px; }
+	
+}
+
+
+/**
+------------------------------------------------------------------
+  * 로그인 / 회원가입 팝업창
+------------------------------------------------------------------
+*/
+#logBox { 
+	width: 550px; height: 505px; 
+	background: #fff; box-shadow: 1px 2px 5px rgba(0,0,0,0.2);
+	position: fixed; left: 50%; margin-left: -240px; 
+	top: 50%; margin-top: -255px; z-index: 999999999;
+}
+
+.form { 
+	position: absolute; top:50%; left: 50%; margin-left: -225px; margin-top: -160px;
+}
+
+#logBox input { 
+	width: 100%; height: 30px; 
+	margin-bottom: 20px; padding: 10px 0; 
+}
+
+/* 아이디/비밀번호 찾기 버튼
+ * 창닫기 버튼
+----------------------------------------------------------*/
+.form-box > ul { margin-bottom: 40px; margin-top: 25px;}
+.close { 
+	background: url(../img/icon/icon_15.png) center center no-repeat; 
+	background-size: cover;
+	transform: rotate(45deg);
+	display: block; width: 25px; height: 25px; 
+	position: absolute; right: 0; top: 0;
+	margin-top: -70px; margin-right: -30px;
+}
+.close:hover  { 
+	border-radius: 50%; 
+	background: rgba(111,192,0,0.1) url(../img/icon/icon_15.png) center center no-repeat; 
+	background-size: cover; width: 25px; height: 25px; 
+}
+/* 로그인/회원가입 버튼
+----------------------------------------------------------*/
+.form-group > button { width: 225px; display: inline-block;
+	font-size: 20px; height: 50px; text-indent: 0; border: 1px solid #6fc000; font-weight: 500; 
+}
+.form-group > button:first-child, .form-group > button:last-child:hover{ 
+	background: #6fc000; color: #fff!important; 
+}
+.form-group > button:last-child,.form-group > button:first-child:hover {
+	background: rgba(111,192,0,0.3); color: #6fc000!important; 
+}

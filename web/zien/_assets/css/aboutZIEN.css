@@ -1,0 +1,333 @@
+/**
+===================================================================
+  * about ZIEN css
+  * Contact Us css  
+  * Architecture css
+===================================================================
+  + .container 넓이는 1200px 
+  * 1440px 이하는 1090px
+------------------------------------------------------------------
+*/
+/*영역조정*/
+.dm { padding: 175px 0 0 88px; }
+.container_box { 
+  width: 1440px; margin: auto; overflow: hidden;
+  /*margin-top: 190px;* */  height: 100%; background: #fff;
+}
+#CEObox { height: 880px!important; margin-top: 16
+  0px; margin-bottom: 50px;}
+#CEO { padding: 140px 0 0;}
+#CEO, .arch-box { width: 1200px; margin: auto;}
+.cont #hit2 { padding-right: 20px; }
+.ml80 { margin-left: 80px;}
+
+
+.ko_name, #arch > #hit1 h2 { 
+  line-height: 35px; margin-top: 40px;
+  border-bottom: 2px solid #6fc000; width: 135px; 
+}
+#CEO #hit1, #CEO #hit2, #arch > #hit1, .arch-box .disc > p { line-height: 25px; }
+#CEO h2, #arch h2 { border-bottom: 1px solid; width: 100%; line-height: 30px; }
+
+/**
+------------------------------------------------------------------
+  * about ZIEN
+  -> ZIEN Story
+------------------------------------------------------------------
+*/
+#intro { width: 100%; height: 100%; margin-top: 175px; }
+.intro-box { width: 705px; height: 705px; margin: auto; }
+#intro > .front, #intro > .back { 
+  width: 700px; height: 700px; margin-left:55px; cursor: pointer; overflow: hidden;
+  border-radius: 50%; border:1px solid #666; background: #fff; 
+   box-shadow: 2px 2px 30px #6fc000; border:none; 
+}
+#intro > .front:hover, #intro > .back:hover {
+  border:1px solid #666; 
+  box-shadow: none;
+}
+#intro > .front > p { padding: 195px 20px 20px 20px; }
+#intro > .back p {
+ text-align: center; line-height: 25px; margin-top: 230px;
+}
+#intro .bt { background: #6fc000; color: #fff; padding: 15px 50px; border-radius: 5px;}
+#intro .bt:hover { 
+  background: rgba(111,192,0,0.3); color: #6fc000; border:1px solid #6fc000; 
+  -webkit-transition: background-color .8s, color .8s;
+} 
+
+
+#ZIENstory { width: 100%; height: 100%; margin-bottom: 20px; position: relative;}
+#ZIENstory h2 { padding-top: 80px; color:#494949; position: absolute; top: 0; left: 50%; margin-left: -55px;}
+#ZIENstory > .pic1 {
+  height: 500px; width: 100%;
+  background-attachment: fixed!important; display: table;
+  background:url(../img/ceraimg2.jpg) center center no-repeat;
+}
+.circle { display: table-cell; vertical-align: middle; padding-left: 70px;}
+.circle > li { 
+  display: inline-block; background: rgba(255, 255, 255, 0.8);  
+  width: 60px; height:60px; border-radius: 50%;
+  padding: 60px 60px; margin-left: -40px; line-height: 30px;
+}
+.c1 { margin-left: 40px!important; }
+.disc2 { 
+  width: 1100px; position: absolute; left: 50%; margin-left: -550px; top: 40%;
+}
+.disc2 > div { 
+  margin-left: 88px;
+  line-height: 25px; background:#eee; padding: 50px;
+  /*position: absolute; bottom: 0; margin-bottom: -180px; left: 50%; margin-left: -560px;*/
+}
+
+
+
+/**
+------------------------------------------------------------------
+  * about ZIEN
+  -> contact us css
+------------------------------------------------------------------
+*/
+
+#contact { height: 2650px !important; margin-top: 170px;}
+.way, .worktime { width: 1112px; height: 100%; margin: 30px auto; margin-bottom: 150px;}
+.way > div { width: 50%; height: 100%; }
+.way > div:first-child { width: 47%; }
+.way > div:first-child > .disc { width: 100%; height: 585px; border-right: 1px solid #d5d5d5; }
+.way > div > div {  height: 490px; margin-bottom: 15px; } 
+.way > div:last-child > div { margin-left: 20px; }
+.way .pic { background: #fbfbfb url(../img/map1.png) center center no-repeat;}
+.way .disc .txt { line-height: 20px; margin-bottom: 30px;}
+.way .disc .txt li:first-child { font-size: 18px; line-height: 28px; font-weight: 700; }
+/* 길 찾기 텍스트 위치 조정*/
+.controler-l { width: 22%; float: left; } .controler-r { width: 70%; float: left; text-indent: 30px;}
+.wayline ul li { padding-left: 47px; line-height: 35px;}
+.highline ul li { padding-left: 47px; line-height: 30px; }
+.wayline ul li:first-child, .highline ul li:first-child {
+  padding-left: 45px; line-height: 23px; margin-bottom: 20px;
+  font-weight: 600;
+}
+.wayline ul li:last-child, .highline ul li:last-child { margin-bottom: 15px; }
+.wayline ul:first-child li:last-child { margin-bottom: 25px; }
+.wayline ul:last-child li:first-child, .highline ul li:first-child { line-height: 46px; } 
+.wayline ul:last-child li:last-child,  .highline ul li:nth-child(2) { margin-top: -15px;}
+.way .disc { position: relative; margin-left: 22px;}
+
+/*길찾기 딱지*/
+.wayline .badge0, .highline .badge0 {
+  display: inline-block; width: 35px; height: 35px;  
+  background:#868686; color:#fff; border-radius: 50%;
+  text-indent: 14px; line-height: 37px; margin-right: 15px;
+  position: absolute; left: 0; margin-top: 4px;
+}
+/*딱지 공통 css제어*/
+.wayline ul li span , .highline ul li span {
+  display: inline-block; width: 24px; height: 24px;
+  text-indent: -1000000px; line-height: 27px; margin-right: 10px;
+}    
+.wayline .badge1 { background: url(../img/icon/bus.png) no-repeat; }
+.wayline .badge2 { background: url(../img/icon/bus.png) 0 -38px no-repeat; }
+.wayline .badge3, .wayline ul:last-child .badge1 { background: url(../img/icon/bus.png) 0 -76px no-repeat; }
+
+.highline .badge1 { background: url(../img/icon/bus.png) -48px 0 no-repeat;  }
+.highline .badge2, .highline .badge3, .highline .badge4 { background: url(../img/icon/bus.png) -48px -31px no-repeat; }
+.highline .badge5 { background: url(../img/icon/bus.png) -48px -108px no-repeat;  }
+
+/*  문의전화 및 영업시간 
+----------------------------------------------------------*/
+.worktime table { 
+  width: 100%;  display: block; margin-bottom: 80px;
+  line-height: 30px; border-top: 2px solid #868686;  border-bottom: 2px solid #868686;
+}
+.worktime table thead { 
+  font-size: 18px; font-weight: 700; 
+  background: #eee; border-bottom: 2px solid #868686;
+}
+.worktime table th {
+  border:1px solid #d5d5d5; border-left: none; 
+  line-height: 50px; width: 185px;
+}
+.worktime table th:last-child{ border-right: none; }
+/* 이미지 영역 조정*/
+.worktime .pic {line-height: 20px;}
+.worktime .pic img {margin-bottom: 30px;}
+.worktime .pic li:first-child{margin-left: 40px;}
+.worktime .pic li:nth-child(2){margin-right: 105px;}
+.worktime .pic .pictxt {margin: 0 65px 0 50px;}
+.worktime #caution {
+ background: #eee; height: 220px;  margin-top: 80px;
+ border-top: 2px solid #868686;  border-bottom: 2px solid #868686; 
+}
+.worktime #caution ul { padding: 30px; line-height: 23px; }
+/**
+------------------------------------------------------------------
+  * about ZIEN
+  -> ZIEN story
+  -> Architecture css
+------------------------------------------------------------------
+*/
+#space {width: 100%; height: 100%;}
+#space .pic { 
+  width: 100%; height: 80%;
+  background: url(../img/space2.jpg) -375px -350px no-repeat; 
+  background-attachment: fixed;
+  background-size: 2300px;
+}
+
+#cadbox { border:1px solid #d5d5d5; width: 1112px; height: 515px; position: relative;}
+#cadbox #cadpic li { padding:62px 80px; margin: auto; }
+#cadbox #cadpic li:last-child { padding:45px 80px 0; margin: auto; }
+#cadbox #cadpic hr { margin: 20px -30px; }
+#cadbox #cadpic p { padding: 0 15px; line-height: 25px;}
+#cadbox #cadpic p:last-child { padding: 0;}
+#cadbox #cadtab {
+ width:1112px; background: #eee; border:  1px solid #d5d5d5; 
+ position: absolute; bottom: 0; margin-bottom: -1px; margin-left: -1px;
+}
+#cadbox #cadtab li { width: 369px; border-left: 1px solid #d5d5d5; display: inline-block; }
+#cadbox #cadtab li a { padding: 20px 0; line-height: 40px; display: inline-block; width: 100%; } 
+#cadbox #cadtab li:first-child { border: none;  }
+#cadbox #cadtab li:last-child { width: 372px; }
+.tab_selec {
+  background: #6fc000;
+}
+#cadbox #cadtab li:first-child a { color: #fff; }
+
+.hight { height: 860px !important; }
+#arch > div:first-child { 
+  width: 400px; height: 300px;
+}
+#arch > #hit1 { 
+  width: 520px; 
+  border-left: 1px solid; padding: 10px 0 0 87px;
+}
+#arch > #hit1 > p { margin: 40px 0 20px;}
+#arch > #hit1 h2 { width: 140px; }
+.arch-box .disc p { width: 1113px; padding: 30px 0 20px; }
+.fh50 { line-height: 50px; }
+
+
+/**
+------------------------------------------------------------------
+  * 노트북
+------------------------------------------------------------------
+*/
+@media(max-width:1440px){
+  .fixed .cont, .arch-box , #cappic { width: 1090px; margin: auto;}
+  .sub-bar li a, #dept { font-size:14px; }
+  .sub-bar li a:hover { font-size: 13px; font-weight: 700; color: #6FC000; }
+  .container_box { width: 1090px; margin-top: 75px; }
+  /*about zien*/
+  #intro { margin-top: 88px; margin-left: 35px;}
+  #intro > .front, #intro > .back, .intro-box { width: 500px; height: 500px; margin:auto;}
+  #intro > div:first-child > p { font-size: 80px;  margin-top: -55px;}
+  #intro > .back  > div:first-child { padding-top: 110px; }
+  #intro > .back p { font-size: 14px; margin-bottom:35px; margin-top: 50px; } 
+  #intro > .back span { font-size: 16px; }
+  #intro .bt { padding: 10px 30px; font-size: 18px; }
+
+  #ZIENstory h2 { font-size: 45px; padding-top: 40px; }
+  #ZIENstory > div { width: 500px; }
+  #ZIENstory > .pic1 { height: 370px; }
+  .circle { padding-left: 33px; }
+  .circle > li { 
+    width: 30px; height: 30px; font-size: 16px; 
+    line-height: 20px; text-align: center;
+  }
+  #ZIENstory .disc2 { width: 900px; top: 35%; }
+  #ZIENstory .disc2 > div { 
+    width: 830px; padding: 35px; font-size: 14px;
+    margin-bottom: -280px; margin-left: 140px;
+  }
+  .arch-box .disc p { width: 900px; margin-left: 45px; }
+  #CEObox { height: 750px; padding-top: 140px; }
+  #CEO { padding-top: 60px; }
+  #CEO, #cadbox, #arch{ width: 900px; }
+  #CEO .cont , #space .disc > p { font-size: 14px !important; line-height: 20px; }
+  #CEO .cont .title, #arch .title { margin-bottom: 80px; font-size: 47px; line-height: 50px;}
+  .ko_name, .ko_name span { font-size: 25px; width: 115px; margin-top: 20px; }
+  #CEO .cont h2 {font-size: 17px; width: 100%; border-bottom: 1px solid;}
+  .hit-disc { margin-left: 20px; }
+  
+  /*architecture*/
+  #space .pic { 
+  background: url(../img/space2.jpg) -280px -270px no-repeat; 
+  background-size: 1760px;
+  }
+  #space .container_box { margin-top: 10px; height: 850px!important; }
+  #space .disc p span:first-child { font-size: 24px; line-height: 40px;}
+  #space .arch-box .disc p { font-size: 16px; width: 900px; }
+  #CAD { padding-left: 78px; margin-bottom: 200px;}
+  #cadbox { height: 450px; }
+  #cadbox p, #arch #hit1 {font-size: 14px; line-height: 20px!important;}
+  #cadbox #cadpic li { padding: 35px 65px; }
+  #cadbox #cadpic li:last-child { padding-top: 28px; }
+  #cadbox #cadtab { width: 900px; }
+  #cadbox #cadtab li { height: 55px; font-size: 18px; width: 299px!important;}
+  #cadbox #cadtab li > a { line-height: 15px;  }
+  #cadbox #cadtab li:last-child { width: 300px!important;}
+  #arch_itv { height: 560px!important; }
+  #arch { position: absolute; left: 50%; margin-left: -415px; padding: 0;}
+  #arch .cont { padding-left: -2px; width: 350px!important; }
+  #arch .cont img { width: 350px; }
+  #arch #hit1 { width: 450px; padding-left: 50px;}
+  
+  /*contact us css*/
+  #contact { height: 2500px!important; }
+  #contact .way, #contact .arch-box       { width: 900px; }
+  .way .disc .txt,.wayline ul li,
+  .highline ul li                         { font-size: 14px; }
+  .wayline ul:last-child li:first-child, 
+  .highline ul li:first-child             {font-size: 16px;}
+  
+  /*  문의전화 및 영업시간 
+  ----------------------------------------------------------*/
+  #contact > div:nth-child(2) { padding-left: 88px; }
+  .worktime { width: 900px; font-size: 14px;}
+  .worktime table th {  line-height: 45px; }
+  .worktime .pic img { width: 235px; }
+}
+
+
+
+
+/**
+------------------------------------------------------------------
+  * 모 바 일 
+------------------------------------------------------------------
+*/
+
+
+@media (max-width: 767px) {
+  .container_box {width: 100%;}
+  /**
+  ------------------------------------------------------------------
+    * about ZIEN
+    -> ZIEN Story
+  ------------------------------------------------------------------
+  */
+  #intro { display: none;}
+  .hidden_intro { display: block; margin-top: 88px; }
+  /*.intro-box { width: 450px; height: 450px;}*/
+  .hidden_intro > div > p  { padding-top: 50px; font-size: 16px; line-height: 23px; }
+/*  .hidden_intro div > a { 
+    background: rgba(111,192,0,0.3); color: #6fc000; 
+    border:1px solid #6fc000; padding: 10px 30px; 
+    border-radius: 5px;
+  } */
+  #ZIENstory { width: 100%; margin-bottom: 20px; }
+  #ZIENstory > .pic1 { display: none; }
+  /*.disc2 h2 { display: block; margin-bottom: 20px; border-bottom: 2px solid; font-size: 20px; font-weight: 600;}*/
+  .disc2 > div { 
+    width: 100%; margin: auto; height: 570px;
+    padding: 20px; top: 0; left: 0; margin-top: -270px;
+  }
+    
+  #CEObox { height: 880px!important; padding-top: 0; }
+  #CEO { padding: 140px 0 0 40px; left: 0; margin-left: 0; }
+  #CEO, .arch-box, #CEO .cont { width: 100%; margin:auto;}
+  #CEO .cont #hit1 { margin-bottom: 30px; }
+  #CEO .cont #hit2 { float: left; } 
+
+  
+}

@@ -1,0 +1,267 @@
+
+
+/***내용영역****/
+
+/**메인배너**/
+.main_box{
+	height: 434px;
+	margin:auto;
+	overflow: hidden;
+	position: relative;
+}
+.main_box li>a>img {
+	margin-left: -300px;
+	width:1900px;
+}
+
+/**메인배너 타이틀 / 버튼 **/
+.banner_title, #m_sub_btn{
+	text-indent: -1000000px;
+	position: absolute;
+	top:100px;
+}
+.main_box .btn_prev {
+	width:24px; height: 43px;
+	position: absolute;
+	top:200px;
+	left: 70px;
+}
+.main_btn .btn_next{
+	position: absolute;
+	right: 70px;
+	top:200px;
+}
+
+/**배너 롤링 메뉴 **/
+ul#main_nav{
+	position: relative;
+}
+#main_nav li{
+	display: inline-block;
+	font-size: 13px;
+	background: #fbfbfb;
+	border:1px solid #929292;
+	border-right: none;
+	width:212px;
+
+}
+#main_nav li a{
+	display: block;
+	color:#939393;
+	width:auto;
+	text-align: center;
+	padding: 10px 20px;
+}
+.btn_play{
+	text-align: center;
+	background: #fff;
+	border:1px solid #929292;
+	width: 31px;
+	padding:10px 1px 7px 1px;
+	position: absolute;
+}
+
+.btn_play>img{
+	width: 10px;
+	height: 11px;
+	vertical-align: top;	
+}
+
+/**잇슬림 추천 제품**/
+.product{
+	position: relative;
+}
+#title h1{
+	padding-top:60px;
+	font-size: 32px;
+	font-weight: 500;
+}
+#title p{
+	color:#999;
+	padding:7px 0;
+}
+#prod-big{
+	height: 517px;
+	position: relative;
+}
+#list{
+	padding-top:20px;
+	
+}
+/**박스 가로정렬**/
+.list-box{
+	width:357px;
+	height: 260px;
+	display: inline-block;
+	position: relative;
+}
+/**박스 이미지**/
+.list-box > .box{
+	overflow: hidden;
+	height:170px;
+	width: 357px;
+	position: relative;
+}
+#mar-box{
+	margin-left:14px;
+	margin-right: 10px;
+}
+.product .list-box img{
+	max-width: 100%;
+	position: absolute;
+	top:-260px;
+
+	margin-top: 170px;
+}
+.list-box .info {
+	padding: 15px;
+}
+
+/**추천뱃지**/
+.badge1>span{
+	position: absolute;
+	top: 158px;
+	left: 10px;
+	background: #9ade0d;
+	color: #fff;
+	padding: 3px 20px;
+	font-weight: 400;
+}
+
+.badge2>span{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: #cdad70;
+	color: #fff;
+	padding: 3px 20px;
+	font-weight: 400;
+}
+.badge3>span{
+	position: absolute;
+	top: 10px;
+	left: 73px;
+	background: #c25674;
+	color: #fff;
+	padding: 3px 20px;
+	font-weight: 400;
+	display: inline-block;
+}
+
+/*****칼로리 조절 프로그램***/
+.program>.container{
+	position: relative;
+	height:663px;
+}
+#prog_btn {
+	border-radius: 30px;
+	border: 1px solid #929292;
+	padding: 10px 20px;
+	position: absolute;
+	left: 50%;
+	top:590px;
+	margin-left: -104px;
+}
+/**마우스 오버시 더보기 창 **/
+.program .box-hover{
+	position: relative;
+}
+.box-bg{
+	width: 367px;
+	height: 417px;
+	background-color: rgba(2, 2, 2, 0.5);
+	position:absolute;
+	top: 0;
+	visibility: hidden;
+	opacity: 0;
+}
+.box-bg > p {
+	position: absolute;
+	top: 50%;
+	left: 146px;
+	margin-top: -25px;
+	color:#fff;
+}
+/**마우스 오버 확대**/
+.program li {
+	overflow: hidden;
+	position: relative;
+	width: 366px;
+	height: 417px;
+}
+
+.program .box-hover ul li:hover img{
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1.1,1.1);
+	transition: transform 300ms ease-out;
+}
+.program .box-hover ul li:hover .box-bg{
+	visibility: visible;
+	opacity: 1;
+}
+/********오늘의 식단******/
+.today{
+	position: relative;
+}
+#today_btn{
+	background: #efefef;
+	padding: 5px 30px;
+	border-radius: 30px;
+	position: absolute;
+	left: 50%;
+	top:1100;
+	margin-left: -109px;
+}
+#today_btn img{
+	vertical-align: middle;
+	padding-right: 10px;
+}
+.cook-img{
+	border-radius: 50%;
+	width: 222px;
+	height: 222px;
+	overflow: hidden;
+	margin-bottom: 15px;
+	position: relative;
+}
+.cook-img>a>img{
+	position: absolute;
+	left: 50%;
+	top:-15px;
+	margin-left:-120px; 
+	width: 260px;
+	height: 260px;
+}
+/**마우스 오버 이미지 확대**/
+.cook-img>a>img:hover{
+	transform: scale(1.1,1.1);
+	transition: transform 300ms ease-out;
+}
+.cook-list >ul>li{
+	float: left;
+	margin-left: 68px;
+}
+.cook-list >ul>li:first-child{
+	margin-left: 0;
+}
+.cook-top{
+	border:1px solid #54bbe8;
+	padding:4px 20px;
+}
+/***인스타그램**/
+.instagram #list>ul>li{
+	margin-left:15px;
+	position: relative;
+}
+.instagram #list>ul>li:first-child{
+	margin-left:0;
+}
+.instagram #list>ul>li>a span {
+	position: absolute;
+	right: 8px;
+	top: 170px;
+	width: 30px;
+	height: 30px;
+	background: url(../img/ico_insta_list.png) center center no-repeat;
+}

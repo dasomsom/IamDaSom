@@ -1,0 +1,135 @@
+
+/**
+------------------------------------------------------------------
+  * 포트폴리오
+------------------------------------------------------------------
+*/
+body { background: #323232; }
+
+/*  공통 CSS
+---------------------------------------------------------------*/
+.port-intro {
+	width: 100%; height: 100%;
+  background: rgb(22,51,99);
+  background: -webkit-linear-gradient(bottom, rgba(95, 75, 139,0.9),rgb(22,51,99),rgba(0,0,0))!important;
+  background-attachment: fixed;
+  display: table;
+}
+.port-intro .dust {
+  display: table-cell;
+  vertical-align: bottom;
+  background-attachment: fixed;
+}
+.intro_page {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -225px;
+}
+.intro_page p {
+  word-wrap: break-word;
+  line-height: 1.5;
+  font-size: 1em;
+  padding: 0 20px;
+  margin: 20px auto 0;
+}
+.port-intro .h2bold {
+  margin: 70px 0 30px;  
+}
+.port-intro > .menutop {
+	border-bottom: 1px solid rgb(95, 75, 139);
+} 
+.port-intro #navbar {
+  overflow: hidden;
+  background:rgba(255, 255, 255, .8);
+}
+.port-intro #navbar.sticky {
+  position: fixed; top: 50px; z-index: 9999;
+  width: 100%;
+  background:#fff;
+}
+.port-intro #navbar li {
+  padding-left: 0; padding-right: 0;
+}
+.port-intro #navbar li > a {
+  border-right: 1px solid #eee;
+  width: 100%;
+}
+.port-intro #navbar .active,
+.port-intro #navbar.sticky .active,
+.port-intro #navbar li:hover a,
+.port-intro #navbar.sticky li:hover a  {
+  background-color: #91baff;
+}
+.sticky + .content {
+  padding-top: 100%;
+}
+.port-intro li {
+	text-align: center;
+	line-height: 3;
+  border-bottom: 1px solid #361b52;
+}
+.port-intro li > a {
+  display: inline-block;
+  width: 100%;
+  color: #361b52;
+}
+#cos-body {
+  display: none;
+  background: #323232;
+  height: 100%;
+}
+#cos-body ul {
+  margin: auto;
+  padding-top: 120px;
+}
+#cos-body .item {
+	float: left;
+	overflow: hidden; 
+  padding-bottom: 10px;
+} 
+#cos-body .item a {
+  display: inline-block;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+.port_tab > p {
+  display:none;
+}
+/*#cos-body .item:first-child {
+  margin-top: 120px;
+}*/ 
+#cos-body .item img {
+	width: 100%; height: 100%;
+}
+@media (min-width: 768px) {
+  .intro_page p {
+    font-size: 16px;
+    width: 520px;
+  }
+  #cos-body ul {
+    height: 100%;
+    padding-top: 170px;
+  }
+  .port_tab > p {
+    display: block;
+    position: relative;
+    top: 175px;
+    line-height: 5;
+  } 
+}
+@media (min-width: 992px) {
+  #cos-body .item {
+  	width: 50%; padding: 0 10px 10px 0;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  #cos-body .item {
+  	width: 25%;  
+  }
+  .intro_page p {
+    font-size: 18px;
+    width: 580px;
+  } 
+}

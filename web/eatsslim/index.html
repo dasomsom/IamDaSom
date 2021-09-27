@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eatsslim clone site</title>
+    <!--크로스 브라우징 호환성-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/code.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+    
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!--상단-->
+    <head>
+        <div class="header_top">
+            <div class="container clearfix">
+                <div class="header-inner">
+                    <div class="area ">
+                        <button class="btn_redirect pull-left" id="btn_pmo" type="button">
+                            <img src="img/ico_redirect.png" class="ico" alt="풀무원건강생활 브랜드" /><span> 풀무원건강생활</span>
+                        </button>
+                    </div>
+                    <div id="area_gnb" class="pull-right">
+                        <ul id="gnb">
+                            <li><a href="#">로그인</a></li>
+                            <!--
+                     -->
+                            <li><a href="#">회원가입</a></li>
+                            <!--
+                     -->
+                            <li><a href="#">장바구니</a></li>
+                            <!--
+                     -->
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header_mid ">
+                <div class="header_inner">
+                    <div class="brand_logo clearfix">
+                        <a href="#"><img src="img/h_logo.png" alt="잇슬림 로고"/></a>
+                        <!--이벤트배너-->
+                        <div class="mini_banner pull-right">
+                            <a href="#"><img src="img/banner_97754171013093634.png" alt="브랜드 위크 배너"/></a>
+                            <div class="mini_banner pull-right">
+                                <a href="#"><img src="img/ico_search_delivery.png" alt="딜리버리" class="delivery_icon"/><span>배달가능지역</span> 검색</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_bottom">
+                <div class="area clearfix">
+                    <a href="#"><img src="img/menu_icon.png" alt="전체상품보기 아이콘"/>전체 상품보기</a>
+                    <ul id="menu_top" class="pull-right">
+                        <li><a href="#">나에게 맞는 잇슬림</a></li>
+                        <li><a href="#">베스트 상품</a></li>
+                        <li><a href="#">추천상품</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">브랜드스토리</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </head>
+
+
+    <!--내용영역-->
+    <div id="content">
+        <!--메인배너-->
+        <div class="main_box clearfix">
+            <ol>
+                <li><a href="#" class="block"><img src="img/banner_99072171017145842.jpg" alt="슬라이더(1)"/></a></li>
+                <!--정지화면만 구현하기 위해 숨겨두기
+                <li><a href="#"><img src="img/banner_45263171013093443.jpg" alt="슬라이더(2)"/></a></li>
+                <li><a href="#"><img src="img/banner_63689170929110755.jpg" alt="슬라이더(3)"/></a></li>
+                <li><a href="#"><img src="img/banner_15020170808114442.jpg" alt="슬라이더(4)"/></a></li>
+                <li><a href="#"><img src="img/banner_21139170711150231.jpg" alt="슬라이더(5)"/></a></li>-->
+            </ol>
+            <!--배너 내용-->
+            <div class=" banner_title">
+                <h3>함께 축하해주시면, 잇슬림 이용권을 선물로 드립니다.</h3>
+                <h1>2017 소비자평가 헬스케어</h1>
+                <h1>10대 브랜드 선정!</h1>
+                <p id="m_sub_btn">자세히 보기</p>
+            </div>
+            <!--버튼-->
+            <div class=" main_btn">
+                <button type="button" class="btn_prev"><img src="img/ico_slider_left.png" alt="이전 배너로 가기" /></button>
+                <button type="button" class="btn_next"><img src="img/ico_slider_right.png" alt="다음 배너로 가기" /></button>
+            </div>
+        </div>
+        <!--배너 롤링 메뉴-->
+        <div class="container clearfix">
+            <ul class="inline " id="main_nav">
+                <li><a href="#">100% 당첨!</a></li><!----><li><a href="#">브랜드대상</a></li><!----><li><a href="#">리뉴얼기념 체험단!</a></li><!----><li><a href="#">칼로리 조절 식단</a></li><!----><li><a href="#">풀무원 건강식품</a></li>
+            </ul>
+            <!--버튼-->
+            <a href="#" class="btn_play pull-right"><img src="img/ico_slider_pause.png" alt="롤링재생버튼"/></a></li>
+            
+        </div>
+        <div class="container">
+            <!--잇슬림추천제품-->
+            <div class="product mbottom-30">
+                <div class="area clearfix">
+                    <div class="text-center" id="title">
+                        <h1>잇슬림 추천 제품</h1>
+                        <p>잇슬림에서 추천하는 베스트 상품을 소개합니다.</p>
+                    </div>
+                    <div id="list">
+                        <div id="prod_big" class="pull-left">
+                            <ul>
+                                <li><img src="img/banner_14418170822154144.jpg" alt="메인 추천메뉴" />
+                                    <div class="sr-only" id="hidden">
+                                        <h1>정찬 타입 칼로리 조절 식사,퀴진!</h1>
+                                        <p>평균 400칼로리 미만, 총 22종의 다양한 메뉴 구성, 매일 아침 집 or 사무실 앞까지 무료 배달!</p>
+                                    </div>
+                                    <div class="badge1 text-center">
+                                        <span>NEW</span>
+                                    </div>
+                                </li>
+                                <!--기타 배너 생략-->
+                            </ul>
+                        </div>
+                        <div class="list-box clearfix" id="mar-box">
+                            <div class="box">
+                                <img src="img/groupImgM_6212170517202640.jpg" alt="서브추천메뉴1" />
+                            </div>
+                            <div class="info">
+                                <span class="ft-20-bold">알라까르떼 슬림
+                                <br/><span class="ft-16-mid">1일 1식 / 2주<span class="ft-16-pt pull-right">69,000원</span></span>
+                                </span>
+                            </div>
+                            <div class="badge2 text-center">
+                                <span>추천</span>
+                            </div>
+                            <div class="badge3 text-center">
+                                <span>BEST</span>
+                            </div>
+                        </div>
+                        <div class="list-box">
+                            <div class="box">
+                                <img src="img/groupImgM_32183170517133324.jpg" alt="서브추천메뉴2" />
+                            </div>
+                            <div class="info">
+                                <span class="ft-20-bold">헬씨퀴진+퀴진
+                                <br/><span class="ft-16-mid">1일 2식 / 2주<span class="ft-16-pt pull-right">184,000원</span></span>
+                                </span>
+                            </div>
+                            <div class="badge2 text-center">
+                                <span>추천</span>
+                            </div>
+                        </div>
+                        <div class="list-box" id="mar-box">
+                            <div class="box">
+                                <img src="img/groupImgM_2507170517202038.jpg" alt="서브추천메뉴3" />
+                            </div>
+                            <div class="info">
+                                <span class="ft-20-bold">알라까르떼 헬씨
+                                <br/><span class="ft-16-mid">1일 1식 / 2주<span class="ft-16-pt pull-right">69,000원</span></span>
+                                </span>
+                            </div>
+                            <div class="badge2 text-center">
+                                <span>추천</span>
+                            </div>
+                            <div class="badge3 text-center">
+                                <span>BEST</span>
+                            </div>
+                        </div>
+                        <div class="list-box">
+                            <div class="box">
+                                <img src="img/groupImgM_65353170517200508.jpg" alt="서브추천메뉴4" />
+                            </div>
+                            <div class="info">
+                                <span class="ft-20-bold">알라까르떼 슬림+미니밀
+                                <br/><span class="ft-16-mid">1일 1식+간편식 / 2주<span class="ft-16-pt pull-right">69,000원</span></span>
+                                </span>
+                            </div>
+                            <div class="badge2 text-center">
+                                <span>추천</span>
+                            </div>
+                            <div class="badge3 text-center">
+                                <span>BEST</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--칼로리 조절 프로그램-->
+        <div class="program bg">
+            <div class="container">
+                <div id="title" class="text-center">
+                    <h1>잇슬림 칼로리 조절 프로그램</h1>
+                    <p>목적별/ 기간별에 따라 잇슬림에서 제안하는 칼로리 조절 프로그램을 소개합니다.</p>
+                </div>
+                <!--내용-->
+                <div id="list" class="clearfix box-hover">
+                    <ul>
+                        <li class="pull-left">
+                                <a href="#">
+                                    <img src="img/anchor_dietProgram1.jpg" alt="집중 칼로리 조절 2주 프로그램"/>
+                                </a>
+                                <div class="text-center box-bg">
+                                    <p class="ft-30-bold">더보기
+                                    <img src="img/diet_program_anchor.png" alt="더보기" class="block mtop-10 mauto ptop-10"/></p>
+                                </div>
+   
+                        </li>
+                        <li class="pull-left">
+                                <a href="#">
+                                    <img src="img/anchor_dietProgram2.jpg" alt="칼로리 조절&amp;유지 4주 프로그램"/>
+                                </a>
+                                <div class="text-center box-bg">
+                                    <p class="ft-30-bold">더보기
+                                    <img src="img/diet_program_anchor.png" alt="더보기" class="block mtop-10 mauto ptop-10"/></p>
+                                </div>
+                        </li>
+                        <li class="pull-left">
+                                <a href="#">
+                                    <img src="img/anchor_dietProgram3.jpg" alt="클렌즈 프로그램"/>
+                                </a>
+                                <div class="text-center box-bg">
+                                    <p class="ft-30-bold">더보기
+                                    <img src="img/diet_program_anchor.png" alt="더보기" class="block mtop-10 mauto ptop-10"/></p>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" id="prog_btn" class="text-center ft-16-mid">프로그램 제품 더 보러가기</button>
+            </div>
+        </div>
+        <!--오늘의 식단-->
+        <div class="container">
+            <div class="today clearfix">
+                <div class="area">
+                    <div id="title" class="text-center">
+                        <h1>오늘의 식단</h1>
+                        <p>매일 신선하게 배달되는 오늘의 식단을 소개합니다.</p>
+                    </div>
+                    <button type="button" id="today_btn" class="text-center mtop-10"><img src="img/m_img_date_calendar.png" alt="오늘의 식단"><span class="ft-20-bold">2017.10.18</span></button>
+                </div>
+                <div class="cook-list ptop-100">
+                    <ul>
+                        <li>
+                            <div class="cook-img">
+                                <a href="#">
+                                    <img src="img/setBig_15431170517203046.jpg" alt="오늘의 식단1"/>
+                                </a>
+                            </div>
+                            <div class="info text-center">
+                                <div class="info text-center">
+                                <button type="button" class="cook-top ft-14-pt mbottom-10">퀴진</button>
+                                <br/>
+                                <p class="ft-20-bold mbottom-10">구운코코넛가츠동세트</p>
+                                <p class="ft-16-mid mbottom-30">431kcal</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cook-img">
+                                <a href="#">
+                                    <img src="img/setBig_92286170517192659.jpg" alt="오늘의 식단2"/>
+                                </a>
+                            </div>
+                            <div class="info text-center">
+                                <button type="button" class="cook-top ft-14-pt mbottom-10">알라까르떼 슬림</button>
+                                <br/>
+                                <p class="ft-20-bold mbottom-10">퀴노아 믹스빈스샐러드</p>
+                                <p class="ft-16-mid mbottom-30">211kcal</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cook-img">
+                                <a href="#">
+                                    <img src="img/setBig_62596170517202615.jpg" alt="오늘의 식단3"/>
+                                </a>
+                            </div>
+                            <div class="info text-center">
+                                <button type="button" class="cook-top ft-14-pt mbottom-10">알라까르떼 헬씨</button>
+                                <br/>
+                                <p class="ft-20-bold mbottom-10">마파가지두부덮밥</p>
+                                <p class="ft-16-mid mbottom-30">340kcal</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cook-img">
+                                <a href="#">
+                                    <img src="img/setBig_14870170517191635.jpg" alt="오늘의 식단4"/>
+                                </a>
+                            </div>
+                            <div class="info text-center">
+                                <button type="button" class="cook-top ft-14-pt mbottom-10">헬씨퀴진</button>
+                                <br/>
+                                <p class="ft-20-bold mbottom-10">무화과오리불고기세트</p>
+                                <p class="ft-16-mid mbottom-30">493kcal</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--브랜드스토리-->
+        <div class="brandstory bg pbottom-30">
+            <div class="container">
+                <div id="title" class="text-center">
+                    <h1>브랜드 스토리</h1>
+                    <p>건강하고 맛있는 잇슬림을 소개합니다.</p>
+                </div>
+                <div id="list">
+                    <ul>
+                        <li class="inline"><a href="#"><img src="img/sample_bs1.jpg" alt="한국인의 식생활에서 칼로리 조절의 키를 찾다"/></a></li>
+                        <li class="inline mleft-5"><a href="#"><img src="img/sample_bs2.jpg" alt="체계적이고 과학적인 설계,믿을 수있는 풀무원 잇슬림"/></a></li>
+                        <li class="inline mleft-5"><a href="#"><img src="img/sample_bs3.jpg" alt="생산부터 고객님의 가정까지 신선 식품 온도기준 10도 준수"/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <!--인스타그램-->
+            <div class="instagram  pbottom-100">
+                <div id="title" class="text-center">
+                    <h1>#eatsslim_</h1>
+                    <p>#잇슬림 #풀무원잇슬림 #칼로리조절식단 #건강하고맛있는도시락 #칼로리조절 #건강도시락
+                    <button type="button" class="inline mleft-30 ft-15-bold">잇슬림 인스타 바로가기 &gt;</button></p>
+                </div>
+                <div id="list" class="clearfix">
+                    <ul>
+                        <li class="pull-left insta-box">
+                            <a href="#"><img src="img/22582664_244297629429288_159820302929362944_n.jpg" alt="소비자평가 10대 브랜드 선정 기념 이벤트. 맛있고 건강한 칼로리조절 식단 잇슬림이 2017 소비자평가 10대 브랜드에 선정되었습니다!" width="208" height="208" /><span></span></a></li>
+                        <li class="pull-left"><a href="#"><img src="img/22580302_534751090250562_2156443512420171776_n.jpg" alt="몸이 무거운 오후 3시 내 몸을 가볍게 만들고 싶을 때 
+치아씨드를 곁들인 상큼한 요거트 어때요? 한결 가벼워질 거에요!" width="208" height="208"/><span></span></a></li>
+                        <li class="pull-left"><a href="#"><img src="img/22500292_1584504778277562_1866491880879947776_n.jpg" alt="보기 좋은 떡이 먹기에도 좋다고 하죠? 알록달록한 다채로운 색감이 돋보이는 오늘의 플레이팅! 제철 채소와 함께라면 더욱 좋아요" width="208" height="208"/><span></span></a></li>
+                        <li class="pull-left"><a href="#"><img src="img/22344690_1985864191687768_5374123780975099904_n.jpg" alt="이젠 위기 의식도 안생기고 두려움도 없이 마구 쪄요 추석 때 채운 칼로리 다 태워야 하는데!
+잇슬림 에디터가 연휴 이전의 보디로 돌아가는 방법을 알려 드려요!" width="208" height="208"/><span></span></a></li>
+                        <li class="pull-left"><a href="#"><img src="img/22351616_407825732953396_3112085130328408064_n.jpg" alt="와인색 식탁보 하나로 고급스러운 중식당 분위기를 연출해봤어요!게다가 메뉴는 캐슈넛깐풍기라니, 이보다 잘 맞는 조화가 있을까요?" width="208" height="208"/><span></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--하단-->
+    <footer>
+        <div class="notice_bg clearfix">
+            <div class="notice">
+                <div class="board pull-left">
+                    <h2>공지사항</h2>
+                    <ul>
+                        <li><a href="#">추석연휴 배달휴무 안내</a></li>
+                        <li><a href="#">알라까르테 핏 중단 안내</a></li>
+                        <li><a href="#">풀무원 잇슬림에서는 안전한 계란을 사용하고 있습니다.</a></li>
+                        <li><a href="#">시크릿 수프 단종 안내</a></li>
+                    </ul>
+                    <a href="#" class="btn_more">+ more</a>
+                </div>
+                <div class="q_icon">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="img/ico_fguide_faq.png" alt="FAQ"/><span>FAQ</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/ico_fguide_mantoman.png" alt="1:1문의"/><span>1:1문의</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/ico_fguide_sdelivery.png" alt="배달지역 검색"/><span>배달지역 검색</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="center_info pull-right">
+                    <h2>고객기쁨센터</h2>
+                    <a><img src="img/ico_cc_tel.png"/>080.800.0434</a>
+                    <h3>기쁨센터 업무시간</h3>
+                    <p>평일:09:00~18:00 / 토요일:09:00~12:00
+                        <br/>카카오톡 Yellow ID : 풀무원잇슬림
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="company" class="clearfix">
+            <div class="logo_pmo pull-left">
+                <img src="img/f_logo.png" alt="풀무원 로고" />
+            </div>
+            <div class="company_info">
+                <ul id="area_info">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">제휴문의</a></li>
+                    <li><a href="#">CCM</a></li>
+                    <li><a href="#">사업자정보확인</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <div class="address pull-left">
+                <address>
+                    풀무원건강생활(주):충청북도 증평군 도안면 원명로 35
+                    <span>대표이사 : 여익현</span>
+                    <span>사업자등록번호 : 301-81-98406</span>
+                    <br/>
+                    <span>통신판매업 신고 : 충북증평 00045</span>
+                    <span>개인정보관리책임자 : 이정언</span>
+                    <span>개인정보 보유기간 : 회원탈퇴시까지</span>
+                    <br/>
+                    <span>Copyright&copy;Pulmuone Health&amp;Living Co.Ltd.All rights reserved.</span>
+                </address>
+            </div>
+            <div class="ft_right pull-right">
+                <form>
+                    <select name="pmo_select" id="pmo_select">
+                        <option>패밀리사이트</option>
+                        <option value="holdings"><a href="#">풀무원홀딩스</a></option>
+                        <option value="shop"><a href="#">풀무원샵</a></option>
+                        <option value="health"><a href="#">풀무원건강생활</a></option>
+                        <option value="lohas"><a href="#">풀무원로하스</a></option>
+                        <option value="kids"><a href="#">풀무원키즈&amp;베이비</a></option>
+                    </select>
+                </form>
+                <div class="ccm_logo">
+                    <img src="img/ico_footer_certify.png" alt="CCM로고" />
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--주문바 고정-->
+    <div class="order_bar clearfix">
+        <div class="container" id="area_order">
+            <ul class="order_left">
+                <li class="cart pull-left">
+                    <img src="img/ico_fc.png" alt="장바구니" /><span id="btn_pt1">0<span> 개</span></span>
+                </li>
+                <li id="cash" class="pull-left">
+                    <p>총 상품 금액<span id="btn_pt2">0<span> 원</span></span>
+                    </p>
+                </li>
+            </ul>
+            <div class="order_right pull-right">
+                <button type="submit" class="order_btn">주문하기</button>
+                <a href="#" class="top_btn">
+                    <img src="img/ico_fc_open.png" alt="위로 올라가기" />
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

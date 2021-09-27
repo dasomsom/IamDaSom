@@ -1,0 +1,190 @@
+/**공통적으로 사용할 코드**/
+* {
+	font-family: "나눔고딕","맑은고딕","굴림","Helvetica";
+	font-size:16px; color:#222;
+}
+a {
+	text-decoration: none; 
+}
+ol{
+	margin: 0;
+	padding:0;
+}
+.container{
+	width:1140px; margin: auto; 
+	
+}
+.bg{
+	background-color: #f6fafb; height: 3000px; width:auto;
+}
+.pull-left {float:left;}
+.pull-right{float:right;}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+	float: none;
+}
+/**마진**/
+.mbottom-10{
+	margin-bottom: 10px;
+}
+.mbottom-30{
+	margin-bottom: 30px;
+}
+.mbottom-100{
+	margin-bottom: 100px;
+}
+.mtop-10{
+	margin-top: 10px;
+}
+.mtop-100{
+	margin-top: 100px;
+}
+.mleft-5{
+	margin-left: 5px;
+}
+.mleft-0{
+	margin-left: 0;
+}
+.mleft-1{
+	margin-left: 1px;
+}
+.mleft-10{
+	margin-left: 10px;
+}
+.mleft-15{
+	margin-left: 15px;
+}
+.mleft-30{
+	margin-left: 30px;
+}
+.mleft-100{
+	margin-left: 100px;
+}
+.mright-5{
+	margin-right: 5px;
+}
+.mauto{
+	margin:auto;
+}
+.mlogo{
+	margin-left:300px;
+}
+/**마진**/
+/**패딩**/
+.padding-30{
+	padding: 30px 0;
+}
+.ptop-10{
+	padding-top: 10px;
+}
+.ptop-20{
+	padding-top: 20px;
+}
+.ptop-30{
+	padding-top: 30px;
+}
+.ptop-100{
+	padding-top: 100px;
+}
+.pbottom-30{
+	padding-bottom: 30px;
+}
+.pbottom-100{
+	padding-bottom:100px;
+}
+.pleft-0{
+	padding-left: 0;
+}
+.pleft-5{
+	padding-left: 5;
+}
+.pleft-10{
+	padding-left: 10;
+}
+.pright-0{
+	padding-right: 0;
+}
+.pright-5{
+	padding-right: 5;
+}
+.pright-10{
+	padding-right: 10;
+}
+/**패딩**/
+.text-center{
+	text-align: center;
+}
+.text-left{
+	text-align: left;
+}
+.text-right{
+	text-align: right;
+}
+.inline{
+	display:inline-block;
+}
+.block{
+	display: block;
+}
+button {
+	background: none;
+	border:none;
+}
+
+.ft-20-bold{
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 350;
+	color: #2c2d2b;
+}
+.ft-30-bold{
+	font-size: 30px;
+	font-weight: 500;
+	color: #666;
+}
+.ft-16-mid{
+	font-size: 16px;
+	font-weight: 300;
+	color: #9d9d9d;
+}
+.ft-16-pt{
+	color: #;
+	font-weight: 400;
+	font-size: 16px;
+}
+.ft-15-bold{
+	font-size: 15px;
+	font-weight: 400;
+	color: #fff;
+}
+.ft-14-pt{
+	color: #;
+	font-weight: 400;
+	font-size: 14px;
+}
+.ft-14-mid{
+	color: #666;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 20px;
+}
+.ft-13-mid{
+	font-size: 13px;
+	line-height: 18px;
+	color: #666;
+}
+.ft-12-mid{
+	color: #9d9d9d;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 18px;
+}
+.sr-only{
+	text-indent: -1000000px;
+}
+#hidden{
+	position: absolute;
+}
+
